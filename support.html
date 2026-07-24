@@ -3,43 +3,414 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="DogDropのサポート情報とよくある質問。" />
+    <meta
+      name="description"
+      content="DogDropの遊び方、カメラ・身体認識・動作入力・記録のトラブル解決方法とお問い合わせ窓口。"
+    />
     <title>サポート | DogDrop</title>
     <link rel="icon" href="assets/app-icon.png" />
     <link rel="stylesheet" href="assets/site.css" />
   </head>
   <body>
-    <header class="site-header"><a class="brand" href="index.html"><img src="assets/app-icon.png" alt="DogDropアプリアイコン" /><span>DogDrop</span></a><nav aria-label="主要メニュー"><a href="index.html">ホーム</a><a href="privacy.html">プライバシー</a></nav></header>
-    <main class="article-page">
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="DogDrop ホーム">
+        <img src="assets/app-icon.png" alt="DogDropアプリアイコン" />
+        <span>DogDrop</span>
+      </a>
+      <nav aria-label="主要メニュー">
+        <a href="index.html">ホーム</a>
+        <a href="privacy.html">プライバシー</a>
+      </nav>
+    </header>
+
+    <main class="article-page support-page">
       <p class="eyebrow">SUPPORT</p>
       <h1>サポート</h1>
-      <p class="article-lead">DogDropを安全に楽しんでいただくための案内と、よくある質問です。</p>
+      <p class="updated">最終更新日：2026年7月24日</p>
+      <p class="article-lead">
+        はじめて遊ぶときの準備と、カメラや動作がうまく認識されないときの解決方法をご案内します。
+      </p>
 
-      <section class="contact-card" aria-labelledby="contact-title">
-        <h2 id="contact-title">お問い合わせ</h2>
-        <p>不具合、ご意見、機能のご要望は、次の連絡先で受け付けます。</p>
-        <p><a class="support-email" href="mailto:dogdrop.support@gmail.com">dogdrop.support@gmail.com</a></p>
-        <p class="small">お問い合わせ内容を確認のうえ、順次対応します。</p>
+      <nav class="support-quick-links" aria-labelledby="quick-links-title">
+        <h2 id="quick-links-title">困っていることから探す</h2>
+        <div class="quick-link-grid">
+          <a href="#getting-started"><span>01</span>はじめて遊ぶ</a>
+          <a href="#camera-permission"><span>02</span>カメラを使えない</a>
+          <a href="#body-tracking"><span>03</span>身体が認識されない</a>
+          <a href="#motion-detection"><span>04</span>動作が反応しない</a>
+          <a href="#gameplay"><span>05</span>ゲーム・音の問題</a>
+          <a href="#records"><span>06</span>記録を確認したい</a>
+          <a href="#safety-privacy"><span>07</span>安全性・プライバシー</a>
+          <a href="#known-issues"><span>08</span>既知の問題・更新情報</a>
+          <a href="#contact"><span>09</span>解決しない・問い合わせる</a>
+        </div>
+      </nav>
+
+      <section id="getting-started" class="support-section" aria-labelledby="getting-started-title">
+        <p class="section-kicker">GETTING STARTED</p>
+        <h2 id="getting-started-title">はじめて遊ぶ方へ</h2>
+        <p>
+          最初はLevel 1と1分プレイがおすすめです。次の順番で準備すると、身体を認識しやすくなります。
+        </p>
+        <ol class="support-steps">
+          <li>
+            <strong>周囲を片付ける</strong>
+            <span>左右へ一歩動き、無理なくしゃがめる広さを確保します。</span>
+          </li>
+          <li>
+            <strong>端末を安定させる</strong>
+            <span>iPhone／iPadの前面カメラが身体の正面を向くよう、倒れにくい場所へ置きます。</span>
+          </li>
+          <li>
+            <strong>およそ2m離れる</strong>
+            <span>頭から足元まで、特に両膝と両足がカメラに入る位置へ移動します。</span>
+          </li>
+          <li>
+            <strong>明るさを整える</strong>
+            <span>強い逆光を避け、身体と背景の色が区別しやすい場所を選びます。</span>
+          </li>
+          <li>
+            <strong>正面で静止する</strong>
+            <span>「カメラ位置を確認」の案内に従い、正面を向いた姿勢を数秒保ちます。</span>
+          </li>
+        </ol>
+        <div class="support-callout safety-callout">
+          <h3>プレイを始める前に</h3>
+          <p>
+            痛み、めまい、強い疲れ、体調不良があるときはプレイしないでください。プレイ中に異常を感じた場合も、すぐに中止してください。
+          </p>
+        </div>
       </section>
 
-      <section aria-labelledby="faq-title">
-        <h2 id="faq-title">よくある質問</h2>
-        <details open><summary>カメラへのアクセスを許可する必要はありますか？</summary><p>はい。DogDropは前面カメラで身体の動きを検出して、ゲーム操作に変換します。カメラ映像は保存・送信しません。</p></details>
-        <details><summary>動きが認識されにくいときは？</summary><p>本アプリは、前面カメラのRGB映像から身体の動きを検出します。iPhoneまたはiPadを安定した場所に置き、全身が映るように端末から約1.5〜2m離れてください。十分に明るい場所で、背景と区別しやすい服装でプレイすることをおすすめします。だぶついた服装や背景と同系色の服装では、検出しにくくなる場合があります。</p></details>
-        <details><summary>どの端末で遊ぶのがおすすめですか？</summary><p>iPhoneとiPadに対応しています。全身を映すため端末から距離を取る必要があるので、画面を見やすいiPadをおすすめします。iPhoneで遊ぶ場合は、画面ミラーリングなどで外部モニターに接続して大きく表示することをおすすめします。</p></details>
-        <details><summary>どのような動きで遊びますか？</summary><p>左右ステップとスクワットを使います。はじめはLevel 1と1分プレイをおすすめします。</p></details>
-        <details><summary>健康づくりやリハビリテーションに使えますか？</summary><p>DogDropは、日常的に体を動かすきっかけづくりや、健康づくりのための一般的な運動として楽しめる運動ゲームです。ただし、疾病・けが・機能障害の回復を目的としたリハビリテーション、診断、治療のために設計または検証されたアプリではありません。運動に不安がある方、治療中の方、医療上の判断が必要な方は、医師などの専門家にご相談ください。</p></details>
+      <section id="camera-permission" class="support-section" aria-labelledby="camera-permission-title">
+        <p class="section-kicker">CAMERA</p>
+        <h2 id="camera-permission-title">カメラを使えないとき</h2>
+
+        <article class="troubleshooting-card">
+          <h3>カメラの許可を拒否した／変更したい</h3>
+          <div class="trouble-summary">
+            <p><strong>症状</strong>カメラの許可が必要という案内が表示され、姿勢調整へ進めない。</p>
+            <p><strong>主な原因</strong>初回確認でカメラを許可しなかった、または後から設定を変更した。</p>
+          </div>
+          <h4>上から順に試してください</h4>
+          <ol>
+            <li>iPhone／iPadの「設定」アプリを開きます。</li>
+            <li>「プライバシーとセキュリティ」（機種やOSによっては「プライバシー」）→「カメラ」を開きます。</li>
+            <li>一覧にある「DogDrop」をオンにします。「設定」→「アプリ」→「DogDrop」→「カメラ」から変更できる場合もあります。</li>
+            <li>DogDropをいったん終了し、もう一度起動します。</li>
+          </ol>
+          <p class="resolved-state"><strong>正常な状態</strong>「カメラ位置を確認」が表示され、全身の確認が始まります。</p>
+          <p class="escalation-note">
+            <strong>解決しない場合</strong>設定画面にDogDropが表示されるか、画面に出たメッセージ、端末とOSの情報を<a href="#contact">お問い合わせ</a>へ添えてください。
+          </p>
+        </article>
+
+        <article class="troubleshooting-card">
+          <h3>カメラが起動しない／映像が表示されない</h3>
+          <div class="trouble-summary">
+            <p><strong>症状</strong>カメラ許可後も「全身を確認中…」から進まない、またはカメラが動いているか分からない。</p>
+            <p><strong>主な原因</strong>権限が反映されていない、カメラの開始に失敗した、身体が認識範囲に入っていない。</p>
+          </div>
+          <div class="support-note">
+            <strong>DogDropはカメラ映像そのものを画面に表示しません。</strong>
+            「映像が見えない」ことだけでは異常ではありません。画面上の認識状態で確認してください。
+          </div>
+          <h4>上から順に試してください</h4>
+          <ol>
+            <li>上の手順で、DogDropのカメラ許可がオンになっていることを確認します。</li>
+            <li>カメラを使用しているほかのアプリを終了します。</li>
+            <li>DogDropを終了して再起動します。</li>
+            <li>改善しない場合は、iPhone／iPadを再起動します。</li>
+            <li>前面カメラを覆っているケースや物がないことを確認します。</li>
+          </ol>
+          <p class="resolved-state"><strong>正常な状態</strong>全身を認識すると姿勢調整が進み、操作練習が表示されます。</p>
+          <p class="escalation-note">
+            <strong>解決しない場合</strong>許可状態、再起動の結果、表示メッセージ、問題が毎回起きるかを<a href="#contact">お問い合わせ</a>へ添えてください。
+          </p>
+        </article>
       </section>
 
-      <section aria-labelledby="report-title">
-        <h2 id="report-title">お問い合わせ時に教えてください</h2>
-        <ul>
-          <li>お使いのiPhoneの機種とiOSのバージョン</li>
-          <li>DogDropのアプリバージョン</li>
-          <li>起きたこと、再現手順、表示されたメッセージ</li>
+      <section id="body-tracking" class="support-section" aria-labelledby="body-tracking-title">
+        <p class="section-kicker">BODY TRACKING</p>
+        <h2 id="body-tracking-title">身体が認識されないとき</h2>
+
+        <article class="troubleshooting-card">
+          <h3>認識されない／プレイ中に認識が外れる</h3>
+          <div class="trouble-summary">
+            <p><strong>症状</strong>「全身を確認中…」が続く、正面姿勢を求められる、プレイが自動的に一時停止する。</p>
+            <p><strong>主な原因</strong>頭・膝・足元が画面外、逆光や暗さ、服と背景が同系色、身体の一部が物に隠れている。</p>
+          </div>
+          <h4>上から順に試してください</h4>
+          <ol>
+            <li>端末からおよそ2m離れ、頭から足元まで入る位置に立ちます。</li>
+            <li>特に両膝が隠れていないことを確認します。</li>
+            <li>前面カメラへ身体の正面を向け、腕を自然に下ろして数秒静止します。</li>
+            <li>窓や強い照明を背にしないよう向きを変えます。</li>
+            <li>背景と区別しやすく、身体の輪郭が分かる服装で試します。</li>
+            <li>複数人がカメラに入らないようにします。</li>
+          </ol>
+          <p class="resolved-state">
+            <strong>正常な状態</strong>姿勢調整が完了し、認識喪失による一時停止から自動的に操作練習またはゲームへ戻ります。
+          </p>
+          <p class="escalation-note">
+            <strong>解決しない場合</strong>起きやすい距離・明るさ・服装、表示メッセージ、開始時かプレイ途中かを<a href="#contact">お問い合わせ</a>へ添えてください。
+          </p>
+        </article>
+      </section>
+
+      <section id="motion-detection" class="support-section" aria-labelledby="motion-detection-title">
+        <p class="section-kicker">MOTION CONTROL</p>
+        <h2 id="motion-detection-title">動作が反応しないとき</h2>
+
+        <article class="troubleshooting-card">
+          <h3>サイドステップが反応しない</h3>
+          <div class="trouble-summary">
+            <p><strong>症状</strong>左右へ動いてもドッグが移動しない。</p>
+            <p><strong>主な原因</strong>動きが小さい、中央へ戻る前に次の動作をしている、膝や足元が認識できていない。</p>
+          </div>
+          <h4>上から順に試してください</h4>
+          <ol>
+            <li>正面を向き、両膝と足元がカメラに入っていることを確認します。</li>
+            <li>左へ動かすときは左脚、右へ動かすときは右脚を横へ一歩スライドします。</li>
+            <li>一歩動いた後は、脚を元の中央位置へ戻します。</li>
+            <li>中央で一度姿勢を安定させてから、次の一歩を行います。</li>
+            <li>速く連続せず、操作練習でドッグが一回ずつ動く速さを確認します。</li>
+          </ol>
+          <p class="resolved-state"><strong>正常な状態</strong>一歩ごとにドッグが対応する方向へ一レーン移動します。</p>
+          <p class="escalation-note">
+            <strong>解決しない場合</strong>左右どちらで起きるか、Level、距離、操作練習でも起きるかを<a href="#contact">お問い合わせ</a>へ添えてください。
+          </p>
+        </article>
+
+        <article class="troubleshooting-card">
+          <h3>スクワットが反応しない</h3>
+          <div class="trouble-summary">
+            <p><strong>症状</strong>しゃがんでもドッグが素早く降下しない。</p>
+            <p><strong>主な原因</strong>上下動が小さい、身体が横を向いている、膝が画面外、しゃがんだ姿勢から戻っていない。</p>
+          </div>
+          <h4>上から順に試してください</h4>
+          <ol>
+            <li>前面カメラへ正面を向き、頭から足元まで入る位置に立ちます。</li>
+            <li>両腕を無理のない範囲で前へ伸ばします。</li>
+            <li>椅子に座るように、腰をゆっくり下げます。</li>
+            <li>ドッグが降下したら、立った姿勢へ戻ってから次のスクワットを行います。</li>
+          </ol>
+          <p class="resolved-state"><strong>正常な状態</strong>一回のスクワットでドッグが素早く降下し、立ち上がると次の入力を受け付けます。</p>
+          <p class="escalation-note">
+            <strong>解決しない場合</strong>Level、操作練習での反応、しゃがんだときの表示メッセージを<a href="#contact">お問い合わせ</a>へ添えてください。
+          </p>
+        </article>
+
+        <article class="troubleshooting-card">
+          <h3>意図しない動きが入る／同じ動作が連続する</h3>
+          <div class="trouble-summary">
+            <p><strong>症状</strong>動いていない方向へドッグが移動する、入力が一度で止まらない。</p>
+            <p><strong>主な原因</strong>基準姿勢が安定する前に動いた、動作後に中央姿勢へ戻っていない、カメラや身体が揺れている。</p>
+          </div>
+          <h4>上から順に試してください</h4>
+          <ol>
+            <li>両足を中央に戻し、正面を向いて数秒静止します。</li>
+            <li>一動作ずつ行い、毎回中央姿勢へ戻ります。</li>
+            <li>端末が揺れない場所へ置き直します。</li>
+            <li>ほかの人や動く物がカメラへ入らないようにします。</li>
+            <li>改善しない場合はタイトルへ戻り、姿勢調整からやり直します。</li>
+          </ol>
+          <p class="resolved-state"><strong>正常な状態</strong>一回の動作に対して一回だけ入力され、中央姿勢ではドッグが動きません。</p>
+          <p class="escalation-note">
+            <strong>解決しない場合</strong>誤入力の方向・動作、発生頻度、Level、開始直後か途中かを<a href="#contact">お問い合わせ</a>へ添えてください。
+          </p>
+        </article>
+      </section>
+
+      <section id="gameplay" class="support-section" aria-labelledby="gameplay-title">
+        <p class="section-kicker">GAMEPLAY</p>
+        <h2 id="gameplay-title">ゲーム進行・音・対応環境</h2>
+
+        <article class="troubleshooting-card">
+          <h3>ゲームが一時停止したまま／進行しない</h3>
+          <div class="trouble-summary">
+            <p><strong>症状</strong>「一時停止中」または追跡停止の案内が表示され、タイマーやゲームが進まない。</p>
+            <p><strong>主な原因</strong>手動で一時停止した、または身体認識が外れて安全のため自動停止した。</p>
+          </div>
+          <h4>上から順に試してください</h4>
+          <ol>
+            <li>一時停止メニューが表示されている場合は「再開」を選びます。</li>
+            <li>身体認識の案内が表示されている場合は、全身をカメラに入れ、正面の中央姿勢で数秒静止します。</li>
+            <li>復帰しない場合は「タイトルへ戻る」を選び、Levelと時間を選び直します。</li>
+            <li>同じ状態が続く場合はDogDropを終了して再起動します。</li>
+          </ol>
+          <p class="resolved-state"><strong>正常な状態</strong>案内が消え、タイマーとドッグの操作が再開します。</p>
+          <p class="escalation-note">
+            <strong>解決しない場合</strong>手動停止か自動停止か、表示メッセージ、再開操作の結果を<a href="#contact">お問い合わせ</a>へ添えてください。
+          </p>
+        </article>
+
+        <article class="troubleshooting-card">
+          <h3>音が出ない</h3>
+          <div class="trouble-summary">
+            <p><strong>症状</strong>ドッグがそろったときなどの効果音が聞こえない。</p>
+            <p><strong>主な原因</strong>メディア音量が小さい、Bluetooth機器へ出力されている、音声処理が一時的に停止している。</p>
+          </div>
+          <h4>上から順に試してください</h4>
+          <ol>
+            <li>端末の音量ボタンでメディア音量を上げます。</li>
+            <li>イヤホンやスピーカーなど、Bluetoothの接続先を確認します。</li>
+            <li>DogDropを終了して再起動します。</li>
+            <li>ほかのアプリで端末から音が出るか確認します。</li>
+          </ol>
+          <p class="resolved-state"><strong>正常な状態</strong>ドッグがそろったときなどに効果音が再生されます。</p>
+          <p class="escalation-note">
+            <strong>解決しない場合</strong>端末、OS、音が出ない場面、Bluetooth利用の有無を<a href="#contact">お問い合わせ</a>へ添えてください。
+          </p>
+        </article>
+
+        <article class="troubleshooting-card">
+          <h3>端末またはOSが対応しているか分からない</h3>
+          <div class="trouble-summary">
+            <p><strong>症状</strong>DogDropをインストールまたは更新できない、正常に起動できるか分からない。</p>
+            <p><strong>主な原因</strong>端末またはOSが、現在配信中のバージョンの互換性条件を満たしていない。</p>
+          </div>
+          <h4>上から順に試してください</h4>
+          <ol>
+            <li>App StoreのDogDropページで「互換性」を確認します。</li>
+            <li>「設定」→「一般」→「情報」で、機種名とOSバージョンを確認します。</li>
+            <li>利用可能なOSアップデートがある場合は、内容を確認して更新を検討します。</li>
+          </ol>
+          <p class="resolved-state"><strong>正常な状態</strong>App StoreからDogDropをインストールまたは更新でき、前面カメラを使った姿勢調整へ進めます。</p>
+          <p class="escalation-note">
+            <strong>解決しない場合</strong>機種名、OSバージョン、App Storeに表示された内容を<a href="#contact">お問い合わせ</a>へ添えてください。
+          </p>
+        </article>
+      </section>
+
+      <section id="records" class="support-section" aria-labelledby="records-title">
+        <p class="section-kicker">RECORDS</p>
+        <h2 id="records-title">記録の見方と続け方</h2>
+        <p>
+          プレイ終了後の結果画面では、今回の結果に続いて「本日のまとめ」「今週のまとめ」「ベストスコア」を確認できます。画面下部のボタンで順番に切り替えます。
+        </p>
+        <div class="support-note">
+          現在のバージョンには、タイトル画面から過去の記録だけを開く専用画面はありません。月間・年間まとめも現行機能ではありません。
+        </div>
+
+        <article class="troubleshooting-card">
+          <h3>プレイ履歴や記録が見つからない</h3>
+          <div class="trouble-summary">
+            <p><strong>症状</strong>タイトル画面に記録ボタンがない、結果画面に記録が反映されない。</p>
+            <p><strong>主な原因</strong>記録はプレイ終了後の結果画面で表示される、またはプレイが完了する前に終了した。</p>
+          </div>
+          <h4>上から順に試してください</h4>
+          <ol>
+            <li>Levelとプレイ時間を選び、タイマー終了までプレイします。</li>
+            <li>結果画面下部の「今週のまとめ &gt;」「ベストスコア &gt;」を順に選びます。</li>
+            <li>Levelやプレイ時間が異なるベストスコアを確認していないか見直します。</li>
+          </ol>
+          <p class="resolved-state"><strong>正常な状態</strong>完了したプレイが本日・今週の集計へ反映され、対象Level／時間のベストスコアが表示されます。</p>
+          <p class="escalation-note">
+            <strong>解決しない場合</strong>Level、プレイ時間、終了時刻、結果画面に表示された値を<a href="#contact">お問い合わせ</a>へ添えてください。
+          </p>
+        </article>
+
+        <article class="troubleshooting-card">
+          <h3>再インストール後に記録が消えた</h3>
+          <div class="trouble-summary">
+            <p><strong>症状</strong>アプリを削除して再インストールした後、以前の記録が表示されない。</p>
+            <p><strong>主な原因</strong>ゲーム履歴は端末内だけに保存され、アカウントやクラウドへ同期する機能がない。</p>
+          </div>
+          <h4>確認してください</h4>
+          <ol>
+            <li>アプリを削除すると、端末内のゲーム履歴も削除される場合があります。</li>
+            <li>現在、削除済みの記録をアプリ内で復元する機能はありません。</li>
+          </ol>
+          <p class="resolved-state"><strong>正常な状態</strong>再インストール後のプレイから、新しい記録が保存されます。</p>
+          <p class="escalation-note">
+            <strong>解決しない場合</strong>再インストール後も新しい記録が保存されないときは、そのプレイ条件を<a href="#contact">お問い合わせ</a>へ添えてください。
+          </p>
+        </article>
+
+        <div class="support-callout encouragement-callout">
+          <h3>無理なく続けるために</h3>
+          <p>
+            記録は医療効果、診断、運動処方を示すものではありません。できる日に少しずつ取り組み、休んだ後は1分など短い時間から再開してください。
+          </p>
+        </div>
+      </section>
+
+      <section id="safety-privacy" class="support-section" aria-labelledby="safety-privacy-title">
+        <p class="section-kicker">SAFETY &amp; PRIVACY</p>
+        <h2 id="safety-privacy-title">安全性とプライバシー</h2>
+        <div class="support-columns">
+          <div>
+            <h3>安全に遊ぶために</h3>
+            <ul>
+              <li>左右と後方に、物や人へぶつからない空間を確保してください。</li>
+              <li>端末は倒れたり滑ったりしない場所へ置いてください。</li>
+              <li>無理に深くしゃがんだり、大きく動いたりしないでください。</li>
+              <li>DogDropは一般向けの運動ゲームであり、リハビリテーション、診断、治療を目的とした製品ではありません。</li>
+            </ul>
+          </div>
+          <div>
+            <h3>データの取扱い</h3>
+            <ul>
+              <li>カメラ映像と身体の骨格座標は端末上で処理し、保存・送信しません。</li>
+              <li>ゲーム履歴は端末内へ保存し、アプリから外部へ送信しません。</li>
+              <li>任意の利用状況データは、同意した場合に限って分析のため送信します。</li>
+            </ul>
+            <p><a class="text-link" href="privacy.html">プライバシーポリシーの詳細を確認する</a></p>
+          </div>
+        </div>
+      </section>
+
+      <section id="known-issues" class="support-section" aria-labelledby="known-issues-title">
+        <p class="section-kicker">UPDATES</p>
+        <h2 id="known-issues-title">既知の問題・更新情報</h2>
+        <div class="known-issues-status">
+          <strong>現在掲載中の既知の問題はありません。</strong>
+          <p>確認済みの問題と回避方法がある場合は、この欄でお知らせします。</p>
+        </div>
+        <h3>更新情報</h3>
+        <dl class="update-list">
+          <div>
+            <dt>2026年7月24日</dt>
+            <dd>初回準備、症状別トラブルシューティング、記録、安全性、問い合わせ案内を追加しました。</dd>
+          </div>
+        </dl>
+      </section>
+
+      <section id="contact" class="contact-card support-contact" aria-labelledby="contact-title">
+        <p class="section-kicker">CONTACT</p>
+        <h2 id="contact-title">解決しない場合のお問い合わせ</h2>
+        <p>次の情報が分かると、状況を確認しやすくなります。分かる範囲でお知らせください。</p>
+        <ul class="contact-checklist">
+          <li>iPhone／iPadの機種名</li>
+          <li>iOS／iPadOSのバージョン</li>
+          <li>DogDropのVersionとBuild Number（TestFlight利用中はTestFlightのDogDrop詳細で確認できます）</li>
+          <li>Levelとプレイ時間</li>
+          <li>問題が起きたおおよその日時</li>
+          <li>画面に表示されたメッセージ</li>
+          <li>問題が起きるまでの操作と、同じ操作で再現するか</li>
         </ul>
+        <div class="privacy-warning" role="note" aria-label="送付しない情報">
+          <strong>送らないでください</strong>
+          <p>カメラ映像、身体を撮影した動画、身体関節データ、診断名や健康情報は送らないでください。</p>
+        </div>
+        <p class="contact-actions">
+          <a
+            class="support-email"
+            href="mailto:dogdrop.support@gmail.com?subject=DogDrop%20%E3%82%B5%E3%83%9D%E3%83%BC%E3%83%88&body=%E7%AB%AF%E6%9C%AB%3A%0AOS%3A%0AVersion%20%2F%20Build%3A%0ALevel%20%2F%20%E3%83%97%E3%83%AC%E3%82%A4%E6%99%82%E9%96%93%3A%0A%E7%99%BA%E7%94%9F%E6%97%A5%E6%99%82%3A%0A%E8%A1%A8%E7%A4%BA%E3%83%A1%E3%83%83%E3%82%BB%E3%83%BC%E3%82%B8%3A%0A%E6%93%8D%E4%BD%9C%E3%83%BB%E5%86%8D%E7%8F%BE%E6%89%8B%E9%A0%86%3A%0A"
+          >メールで問い合わせる</a>
+          <span>dogdrop.support@gmail.com</span>
+        </p>
+        <p class="small">メールアプリが開かない場合は、上記アドレスをコピーしてご連絡ください。</p>
       </section>
+
+      <p class="back-to-top"><a href="#quick-links-title">困っていることから探すへ戻る</a></p>
     </main>
-    <footer class="site-footer"><a class="brand" href="index.html"><img src="assets/app-icon.png" alt="" /><span>DogDrop</span></a><div><a href="index.html">ホーム</a><a href="privacy.html">プライバシーポリシー</a></div><p>© 2026 DogDrop</p></footer>
+
+    <footer class="site-footer">
+      <a class="brand" href="index.html"><img src="assets/app-icon.png" alt="" /><span>DogDrop</span></a>
+      <div><a href="index.html">ホーム</a><a href="privacy.html">プライバシーポリシー</a></div>
+      <p>© 2026 DogDrop</p>
+    </footer>
   </body>
 </html>
