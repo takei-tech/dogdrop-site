@@ -130,8 +130,24 @@
           </div>
           <div class="support-note">
             <strong>DogDropはカメラ映像そのものを画面に表示しません。</strong>
-            「映像が見えない」ことだけでは異常ではありません。画面上の認識状態で確認してください。
+            代わりに、身体の認識状態を関節点と線によるスティック表示で示します。「映像が見えない」ことだけでは異常ではありません。
           </div>
+          <figure class="support-screenshot support-screenshot--tracking">
+            <div class="support-screenshot-frame">
+              <img
+                src="assets/support-body-tracking-stick.png"
+                width="1170"
+                height="2532"
+                loading="lazy"
+                decoding="async"
+                alt="DogDropのカメラ位置確認画面。身体の主な関節が緑色の点、関節のつながりが白い線で表示されている。"
+              />
+            </div>
+            <figcaption>
+              <strong>身体の認識状態を示すスティック表示</strong>
+              緑色の関節点と白い線が全身に表示されれば、主な関節を認識できている目安です。表示に使う身体の骨格座標は端末上でリアルタイムに処理し、保存・送信しません。
+            </figcaption>
+          </figure>
           <h4>上から順に試してください</h4>
           <ol>
             <li>上の手順で、DogDropのカメラ許可がオンになっていることを確認します。</li>
@@ -412,7 +428,7 @@
         <dl class="update-list">
           <div>
             <dt>2026年7月25日</dt>
-            <dd>初回起動時のカメラアクセス確認画面と、任意の利用状況データ送信確認画面を追加しました。</dd>
+            <dd>初回起動時のカメラアクセス確認画面、身体認識状態のスティック表示、任意の利用状況データ送信確認画面を追加しました。</dd>
           </div>
           <div>
             <dt>2026年7月24日</dt>
