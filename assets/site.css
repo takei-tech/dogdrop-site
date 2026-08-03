@@ -84,14 +84,31 @@ details p { padding:0 20px; font-size:14px; }
 .guide-jump-links span { color:#ffd5b7; font:800 13px/1 var(--display-font); }
 .guide-section { scroll-margin-top:24px; padding:62px 0!important; }
 .guide-section > h2 { margin-bottom:18px; font-size:clamp(28px,4vw,40px); }
-.guide-overview { display:grid; grid-template-columns:minmax(0,1fr) 280px; align-items:start; gap:48px; margin-top:28px; }
-.guide-feature-list { display:grid; gap:12px; margin:26px 0 0; padding:0; list-style:none; }
+.guide-overview { margin-top:28px; }
+.guide-overview-copy > p { max-width:760px; }
+.guide-feature-list { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:12px; margin:26px 0 36px; padding:0; list-style:none; }
 .guide-feature-list li { padding:17px 19px; border:1px solid var(--line); border-radius:15px; background:white; }
 .guide-feature-list strong,.guide-feature-list span { display:block; }
 .guide-feature-list strong { color:var(--navy); }
 .guide-feature-list span { margin-top:3px; color:var(--muted); font-size:14px; }
-.guide-level-shot { max-width:280px; justify-self:center; }
-.guide-level-shot img { width:100%; height:auto; aspect-ratio:3/4; object-fit:cover; object-position:center top; }
+.guide-gameplay-shot { max-width:680px; margin:0 auto; }
+.guide-gameplay-visual { position:relative; overflow:hidden; border:9px solid white; border-radius:30px; background:var(--sky); box-shadow:var(--shadow); }
+.guide-gameplay-visual > img { width:100%; height:auto; border-radius:20px; box-shadow:none; }
+.gameplay-pencil-arrows { position:absolute; inset:0; width:100%; height:100%; overflow:visible; pointer-events:none; }
+.pencil-line { fill:none; stroke-linecap:round; stroke-linejoin:round; stroke-width:1.15; vector-effect:non-scaling-stroke; }
+.pencil-line--ghost { opacity:.28; transform:translate(.45px,.65px); }
+.pencil-line--blue { stroke:#2e739c; }
+.pencil-line--coral { stroke:#c75a44; }
+.pencil-line--green { stroke:#4b7d57; stroke-dasharray:3 3; }
+.gameplay-annotation { position:absolute; z-index:1; margin:0; font:700 clamp(13px,3.5vw,26px)/1.35 "Klee","Hiragino Maru Gothic ProN","Yu Gothic",sans-serif; letter-spacing:.02em; filter:drop-shadow(0 1px 0 rgba(255,255,255,.95)) drop-shadow(0 -1px 0 rgba(255,255,255,.9)) drop-shadow(1px 0 0 rgba(255,255,255,.9)) drop-shadow(-1px 0 0 rgba(255,255,255,.9)); pointer-events:none; }
+.gameplay-annotation::after { display:block; height:3px; margin-top:2px; border-radius:50%; opacity:.45; content:""; transform:rotate(-1deg); }
+.gameplay-annotation--step { top:17%; left:7%; color:#255f83; transform:rotate(-2deg); }
+.gameplay-annotation--step::after { background:#2e739c; }
+.gameplay-annotation--drop { top:38%; right:7%; color:#aa4938; transform:rotate(2deg); }
+.gameplay-annotation--drop::after { background:#c75a44; }
+.gameplay-annotation--match { top:67%; right:7%; color:#3f6d4b; transform:rotate(-1.5deg); }
+.gameplay-annotation--match::after { background:#4b7d57; }
+.guide-gameplay-shot figcaption { max-width:640px; margin:0 auto; padding-top:15px; font-size:14px; font-weight:400; line-height:1.7; }
 .guide-prepare-list { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px; margin:28px 0 0; padding:0; list-style:none; counter-reset:guide-prepare; }
 .guide-prepare-list li { position:relative; min-height:126px; padding:22px 22px 20px 66px; border:1px solid var(--line); border-radius:18px; background:white; counter-increment:guide-prepare; }
 .guide-prepare-list li::before { position:absolute; top:20px; left:20px; width:32px; height:32px; border-radius:50%; display:grid; place-items:center; background:var(--coral-strong); color:white; font-weight:800; content:counter(guide-prepare); }
@@ -199,7 +216,7 @@ details p { padding:0 20px; font-size:14px; }
 .back-to-top a { min-height:44px; display:inline-flex; align-items:center; color:var(--navy); font-weight:800; }
 
 @media (max-width:760px) { .site-header,.site-footer { padding:18px 20px; align-items:flex-start; } .site-header { flex-direction:column; } nav { width:100%; justify-content:flex-start; gap:14px; } .hero { grid-template-columns:1fr; padding:45px 24px 65px; gap:45px; min-height:0; } .hero-art { max-width:580px; } .section { padding:66px 24px; } .split-heading { display:block; } .split-heading > p { margin-top:17px; } .steps,.device-grid { grid-template-columns:1fr; } .screen-grid { grid-template-columns:1fr; } .phone-shot { max-width:270px; } .site-footer { flex-wrap:wrap; } .site-footer > div { order:3; width:100%; flex-wrap:wrap; } .article-page { padding:55px 24px 75px; } }
-@media (max-width:760px) { .guide-hero { grid-template-columns:1fr; gap:34px; padding:4px 0 50px!important; } .guide-actions { align-items:flex-start; flex-direction:column; } .guide-hero-art { max-width:580px; } .guide-jump-links,.guide-prepare-list,.motion-guide-grid,.guide-overview,.guide-tracking-layout { grid-template-columns:1fr; } .guide-jump-links { margin:0 -4px 36px; padding:20px; } .guide-level-shot { max-width:250px; } .guide-section { padding:50px 0!important; } .guide-tracking-layout { gap:28px; } .guide-support-cta { align-items:stretch; flex-direction:column; padding:24px 22px; } .guide-support-cta .button { text-align:center; } }
+@media (max-width:760px) { .guide-hero { grid-template-columns:1fr; gap:34px; padding:4px 0 50px!important; } .guide-actions { align-items:flex-start; flex-direction:column; } .guide-hero-art { max-width:580px; } .guide-jump-links,.guide-prepare-list,.motion-guide-grid,.guide-tracking-layout { grid-template-columns:1fr; } .guide-jump-links { margin:0 -4px 36px; padding:20px; } .guide-feature-list { grid-template-columns:1fr; margin-bottom:28px; } .guide-gameplay-visual { border-width:6px; border-radius:24px; } .guide-gameplay-visual > img { border-radius:17px; } .guide-section { padding:50px 0!important; } .guide-tracking-layout { gap:28px; } .guide-support-cta { align-items:stretch; flex-direction:column; padding:24px 22px; } .guide-support-cta .button { text-align:center; } }
 @media (max-width:760px) { .quick-link-grid,.support-steps,.support-columns,.trouble-summary { grid-template-columns:1fr; } .support-guide-entry { align-items:flex-start; flex-direction:column; gap:8px; } .support-guide-entry a { flex:0 1 auto; } .support-quick-links { margin:30px -4px 48px; padding:24px 20px; border-radius:22px; } .quick-link-grid a { min-height:56px; } .support-page .support-section { padding:48px 0 34px; } .troubleshooting-card { padding:22px 20px; border-radius:18px; } .trouble-summary { gap:12px; } .contact-checklist { columns:1; } .contact-card { margin-right:-4px; margin-left:-4px; padding:24px 20px!important; } .contact-actions { flex-direction:column; align-items:stretch; } .support-email { width:100%; } .update-list > div { grid-template-columns:1fr; gap:4px; } }
 @media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } *,*::before,*::after { scroll-behavior:auto!important; transition-duration:.01ms!important; animation-duration:.01ms!important; animation-iteration-count:1!important; } }
 @media print { .site-header,.site-footer,.back-to-top,.guide-jump-links { display:none; } body { background:white; } .article-page { max-width:none; padding:0; } .support-quick-links,.troubleshooting-card,.support-screenshot-frame,.guide-hero-art img { box-shadow:none; } }

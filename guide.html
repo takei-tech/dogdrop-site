@@ -58,7 +58,7 @@
         <p class="section-kicker">ABOUT DOGDROP</p>
         <h2 id="game-title">どんなゲーム？</h2>
         <div class="guide-overview">
-          <div>
+          <div class="guide-overview-copy">
             <p>
               画面上から落ちてくる犬を身体の動きで操作し、Levelごとのルールに合うレーンへ移動させてスコアを伸ばします。
             </p>
@@ -68,16 +68,42 @@
               <li><strong>1分から遊ぶ</strong><span>最初はLevel 1で、同じ犬種のレーンを目指します。</span></li>
             </ul>
           </div>
-          <figure class="guide-level-shot">
-            <img
-              src="assets/level-guide.png"
-              width="1536"
-              height="2048"
-              loading="lazy"
-              decoding="async"
-              alt="DogDropのLevel 1のルール説明画面"
-            />
-            <figcaption>Levelを選ぶ画面で、ルールを確認できます。</figcaption>
+          <figure class="guide-gameplay-shot">
+            <div class="guide-gameplay-visual">
+              <img
+                src="assets/level1-gameplay.png"
+                width="1488"
+                height="2266"
+                loading="lazy"
+                decoding="async"
+                alt="DogDropのLevel 1プレイ画面。画面上から白い犬が落下し、下部に白い犬と茶色い犬のレーンが表示されている"
+              />
+              <svg class="gameplay-pencil-arrows" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+                <defs>
+                  <marker id="pencil-blue-start" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto-start-reverse" markerUnits="strokeWidth">
+                    <path d="M 7 1 L 1 4 L 7 7" fill="none" stroke="#2e739c" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  </marker>
+                  <marker id="pencil-coral-end" markerWidth="8" markerHeight="8" refX="6.5" refY="4" orient="auto" markerUnits="strokeWidth">
+                    <path d="M 1 1 L 7 4 L 1 7" fill="none" stroke="#c75a44" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  </marker>
+                  <marker id="pencil-green-end" markerWidth="8" markerHeight="8" refX="6.5" refY="4" orient="auto" markerUnits="strokeWidth">
+                    <path d="M 1 1 L 7 4 L 1 7" fill="none" stroke="#4b7d57" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  </marker>
+                </defs>
+                <path class="pencil-line pencil-line--blue pencil-line--ghost" d="M 8 26 C 18 24.8, 35 25.3, 49 24.5" />
+                <path class="pencil-line pencil-line--blue" d="M 8 25.5 C 20 24.7, 36 25.1, 49 24.2" marker-start="url(#pencil-blue-start)" marker-end="url(#pencil-blue-start)" />
+                <path class="pencil-line pencil-line--coral pencil-line--ghost" d="M 62 47 C 63 52, 60 57, 58 62" />
+                <path class="pencil-line pencil-line--coral" d="M 61.5 46.5 C 62.5 51.5, 60 57, 57.5 62.5" marker-end="url(#pencil-coral-end)" />
+                <path class="pencil-line pencil-line--green pencil-line--ghost" d="M 40 64 C 36 70, 30 76, 24 82" />
+                <path class="pencil-line pencil-line--green" d="M 39.5 63.5 C 35.5 70, 29.5 76.5, 23.5 82.5" marker-end="url(#pencil-green-end)" />
+              </svg>
+              <p class="gameplay-annotation gameplay-annotation--step" aria-hidden="true">ステップで左右へ</p>
+              <p class="gameplay-annotation gameplay-annotation--drop" aria-hidden="true">スクワットで下へ</p>
+              <p class="gameplay-annotation gameplay-annotation--match" aria-hidden="true">同じ犬のレーンへ</p>
+            </div>
+            <figcaption>
+              実際のLevel 1プレイ画面です。左右ステップで犬を動かし、スクワットで素早く落として、同じ犬種のレーンを目指します。
+            </figcaption>
           </figure>
         </div>
       </section>
