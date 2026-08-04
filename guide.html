@@ -30,7 +30,7 @@
         <div class="guide-hero-copy">
           <p class="eyebrow">FIRST PLAY GUIDE</p>
           <h1 id="guide-title">はじめての方へ</h1>
-          <p class="updated">最終更新日：2026年8月3日</p>
+          <p class="updated">最終更新日：2026年8月4日</p>
           <p class="article-lead">
             DogDropは、iPhone／iPadの前面カメラで身体の動きを読み取り、左右ステップとスクワットで犬を操作する運動ゲームです。
           </p>
@@ -58,52 +58,67 @@
         <p class="section-kicker">ABOUT DOGDROP</p>
         <h2 id="game-title">どんなゲーム？</h2>
         <div class="guide-overview">
-          <div class="guide-overview-copy">
-            <p>
-              画面上から落ちてくる犬を身体の動きで操作し、Levelごとのルールに合うレーンへ移動させてスコアを伸ばします。
-            </p>
-            <ul class="guide-feature-list">
-              <li><strong>左右へ動かす</strong><span>左右ステップで犬を一レーン移動します。</span></li>
-              <li><strong>素早く落とす</strong><span>スクワットで犬を下へ素早く移動します。</span></li>
-              <li><strong>1分から遊ぶ</strong><span>最初はLevel 1で、同じ犬種のレーンを目指します。</span></li>
-            </ul>
-          </div>
-          <figure class="guide-gameplay-shot">
-            <div class="guide-gameplay-visual">
-              <img
-                src="assets/level1-gameplay.png"
-                width="1488"
-                height="2266"
-                loading="lazy"
-                decoding="async"
-                alt="DogDropのLevel 1プレイ画面。画面上から白い犬が落下し、下部に白い犬と茶色い犬のレーンが表示されている"
-              />
-              <svg class="gameplay-pencil-arrows" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
-                <defs>
-                  <marker id="pencil-blue-start" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto-start-reverse" markerUnits="strokeWidth">
-                    <path d="M 7 1 L 1 4 L 7 7" fill="none" stroke="#2e739c" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                  </marker>
-                  <marker id="pencil-coral-end" markerWidth="8" markerHeight="8" refX="6.5" refY="4" orient="auto" markerUnits="strokeWidth">
-                    <path d="M 1 1 L 7 4 L 1 7" fill="none" stroke="#c75a44" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                  </marker>
-                  <marker id="pencil-green-end" markerWidth="8" markerHeight="8" refX="6.5" refY="4" orient="auto" markerUnits="strokeWidth">
-                    <path d="M 1 1 L 7 4 L 1 7" fill="none" stroke="#4b7d57" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                  </marker>
-                </defs>
-                <path class="pencil-line pencil-line--blue pencil-line--ghost" d="M 8 26 C 18 24.8, 35 25.3, 49 24.5" />
-                <path class="pencil-line pencil-line--blue" d="M 8 25.5 C 20 24.7, 36 25.1, 49 24.2" marker-start="url(#pencil-blue-start)" marker-end="url(#pencil-blue-start)" />
-                <path class="pencil-line pencil-line--coral pencil-line--ghost" d="M 62 47 C 63 52, 60 57, 58 62" />
-                <path class="pencil-line pencil-line--coral" d="M 61.5 46.5 C 62.5 51.5, 60 57, 57.5 62.5" marker-end="url(#pencil-coral-end)" />
-                <path class="pencil-line pencil-line--green pencil-line--ghost" d="M 40 64 C 36 70, 30 76, 24 82" />
-                <path class="pencil-line pencil-line--green" d="M 39.5 63.5 C 35.5 70, 29.5 76.5, 23.5 82.5" marker-end="url(#pencil-green-end)" />
-              </svg>
-              <p class="gameplay-annotation gameplay-annotation--step" aria-hidden="true">ステップで左右へ</p>
-              <p class="gameplay-annotation gameplay-annotation--drop" aria-hidden="true">スクワットで下へ</p>
-              <p class="gameplay-annotation gameplay-annotation--match" aria-hidden="true">同じ犬のレーンへ</p>
-            </div>
-            <figcaption>
-              実際のLevel 1プレイ画面です。左右ステップで犬を動かし、スクワットで素早く落として、同じ犬種のレーンを目指します。
-            </figcaption>
+          <p class="guide-game-tagline">落ちてくる犬を、同じ犬種のレーンへ！</p>
+          <p class="guide-game-intro">身体を動かして犬をそろえる、1分から遊べる運動ゲームです。</p>
+
+          <ol class="game-storyboard">
+            <li class="game-story-step game-story-step--fall">
+              <span class="game-story-number" aria-hidden="true">1</span>
+              <div class="game-story-visual" aria-hidden="true">
+                <img class="story-dog story-dog--falling" src="assets/guide-dog-white.png" alt="" />
+                <span class="story-arrow story-arrow--down">↓</span>
+                <span class="story-lane story-lane--left"><img src="assets/guide-dog-white.png" alt="" /></span>
+                <span class="story-lane story-lane--right"><img src="assets/guide-dog-corgi.png" alt="" /></span>
+              </div>
+              <h3>犬が落ちてくる</h3>
+              <p>画面の上から犬が降りてきます。</p>
+            </li>
+
+            <li class="game-story-step game-story-step--step">
+              <span class="game-story-number" aria-hidden="true">2</span>
+              <div class="game-story-visual story-pose-pair" aria-hidden="true">
+                <img src="assets/guide-neutral-stance.png" alt="" />
+                <span class="story-arrow story-arrow--across">→</span>
+                <img src="assets/guide-side-step.png" alt="" />
+              </div>
+              <h3>横へ一歩</h3>
+              <p>犬が左右のレーンへ移動します。</p>
+            </li>
+
+            <li class="game-story-step game-story-step--squat">
+              <span class="game-story-number" aria-hidden="true">3</span>
+              <div class="game-story-visual story-pose-pair" aria-hidden="true">
+                <img src="assets/guide-standing-camera.png" alt="" />
+                <span class="story-arrow story-arrow--across">→</span>
+                <img src="assets/guide-squat-camera.png" alt="" />
+              </div>
+              <h3>スクワット</h3>
+              <p>犬を素早く下へ落とします。</p>
+            </li>
+
+            <li class="game-story-step game-story-step--match">
+              <span class="game-story-number" aria-hidden="true">4</span>
+              <div class="game-story-visual story-match" aria-hidden="true">
+                <span class="story-match-badge">ポイント！</span>
+                <img class="story-match-dog story-match-dog--top" src="assets/guide-dog-white.png" alt="" />
+                <span class="story-match-plus">＋</span>
+                <img class="story-match-dog story-match-dog--bottom" src="assets/guide-dog-white.png" alt="" />
+              </div>
+              <h3>同じ犬種をそろえる</h3>
+              <p>同じ犬種がそろうとポイントを獲得します。</p>
+            </li>
+          </ol>
+
+          <figure class="guide-live-screen">
+            <img
+              src="assets/level1-gameplay.png"
+              width="1488"
+              height="2266"
+              loading="lazy"
+              decoding="async"
+              alt="DogDropの実際のLevel 1プレイ画面。上から落ちてくる犬、下部の犬種ごとのレーン、右上の身体認識表示が見える"
+            />
+            <figcaption>実際のLevel 1プレイ画面です。右上には、身体の認識状態が表示されます。</figcaption>
           </figure>
         </div>
       </section>
