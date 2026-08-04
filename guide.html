@@ -58,56 +58,124 @@
         <p class="section-kicker">ABOUT DOGDROP</p>
         <h2 id="game-title">どんなゲーム？</h2>
         <div class="guide-overview">
-          <p class="guide-game-tagline">落ちてくる犬を、同じ犬種のレーンへ！</p>
-          <p class="guide-game-intro">身体を動かして犬をそろえる、1分から遊べる運動ゲームです。</p>
+          <p class="guide-game-tagline">端末の前でできる、シンプルな運動ゲーム</p>
+          <p class="guide-game-intro">左右へ一歩とスクワットで、犬を動かします。最初はLevel 1と1分プレイがおすすめです。</p>
 
-          <ol class="game-storyboard">
-            <li class="game-story-step game-story-step--fall">
-              <span class="game-story-number" aria-hidden="true">1</span>
-              <div class="game-story-visual" aria-hidden="true">
-                <img class="story-dog story-dog--falling" src="assets/guide-dog-white.png" alt="" />
-                <span class="story-arrow story-arrow--down">↓</span>
-                <span class="story-lane story-lane--left"><img src="assets/guide-dog-white.png" alt="" /></span>
-                <span class="story-lane story-lane--right"><img src="assets/guide-dog-corgi.png" alt="" /></span>
-              </div>
-              <h3>犬が落ちてくる</h3>
-              <p>画面の上から犬が降りてきます。</p>
-            </li>
+          <div class="game-flow-start">
+            <span class="game-flow-number" aria-hidden="true">1</span>
+            <div class="game-flow-start-visual" aria-hidden="true">
+              <img src="assets/guide-dog-white.png" alt="" />
+              <span>↓</span>
+            </div>
+            <div>
+              <h3>犬が上から落ちてくる</h3>
+              <p>身体の動きで犬を操作し、目標のレーンへ移動させます。</p>
+            </div>
+          </div>
 
-            <li class="game-story-step game-story-step--step">
-              <span class="game-story-number" aria-hidden="true">2</span>
-              <div class="game-story-visual story-pose-pair" aria-hidden="true">
-                <img src="assets/guide-neutral-stance.png" alt="" />
-                <span class="story-arrow story-arrow--across">→</span>
-                <img src="assets/guide-side-step.png" alt="" />
+          <div class="motion-response-list">
+            <article class="motion-response-panel">
+              <div class="motion-response-heading">
+                <span class="game-flow-number" aria-hidden="true">2</span>
+                <div>
+                  <h3>左右ステップ</h3>
+                  <p>片足を横へ一歩出し、中央へ戻します。</p>
+                </div>
               </div>
-              <h3>横へ一歩</h3>
-              <p>犬が左右のレーンへ移動します。</p>
-            </li>
+              <div class="motion-response-grid">
+                <section class="motion-response-card">
+                  <p class="motion-response-label">モーション見本</p>
+                  <div class="side-step-demo" aria-hidden="true">
+                    <div class="pose-frame">
+                      <img src="assets/guide-neutral-stance.png" alt="" />
+                      <span class="pose-caption">中央</span>
+                    </div>
+                    <span class="motion-sequence-arrow">→</span>
+                    <div class="pose-frame">
+                      <img src="assets/guide-side-step.png" alt="" />
+                      <span class="pose-caption">一歩</span>
+                    </div>
+                    <div class="footprint-track">
+                      <span class="footprint footprint--start-left"></span>
+                      <span class="footprint footprint--start-right"></span>
+                      <span class="footprint-track-arrow">←</span>
+                      <span class="footprint footprint--step"></span>
+                    </div>
+                  </div>
+                  <strong>片足だけを横へ一歩</strong>
+                  <p>歩き続けず、一歩ごとに中央へ戻ります。</p>
+                </section>
 
-            <li class="game-story-step game-story-step--squat">
-              <span class="game-story-number" aria-hidden="true">3</span>
-              <div class="game-story-visual story-pose-pair" aria-hidden="true">
-                <img src="assets/guide-standing-camera.png" alt="" />
-                <span class="story-arrow story-arrow--across">→</span>
-                <img src="assets/guide-squat-camera.png" alt="" />
-              </div>
-              <h3>スクワット</h3>
-              <p>犬を素早く下へ落とします。</p>
-            </li>
+                <span class="motion-response-arrow" aria-hidden="true">→</span>
 
-            <li class="game-story-step game-story-step--match">
-              <span class="game-story-number" aria-hidden="true">4</span>
-              <div class="game-story-visual story-match" aria-hidden="true">
-                <span class="story-match-badge">ポイント！</span>
-                <img class="story-match-dog story-match-dog--top" src="assets/guide-dog-white.png" alt="" />
-                <span class="story-match-plus">＋</span>
-                <img class="story-match-dog story-match-dog--bottom" src="assets/guide-dog-white.png" alt="" />
+                <section class="motion-response-card motion-response-card--game">
+                  <p class="motion-response-label">ゲーム画面の変化</p>
+                  <div class="lane-shift-demo" aria-hidden="true">
+                    <span class="lane-shift-arrow">←</span>
+                    <img class="lane-dog lane-dog--before" src="assets/guide-dog-white.png" alt="" />
+                    <img class="lane-dog lane-dog--after" src="assets/guide-dog-white.png" alt="" />
+                  </div>
+                  <strong>犬が1レーン移動</strong>
+                  <p>一歩出した方向へ、犬が横に移動します。</p>
+                </section>
               </div>
-              <h3>同じ犬種をそろえる</h3>
-              <p>同じ犬種がそろうとポイントを獲得します。</p>
-            </li>
-          </ol>
+            </article>
+
+            <article class="motion-response-panel">
+              <div class="motion-response-heading">
+                <span class="game-flow-number" aria-hidden="true">3</span>
+                <div>
+                  <h3>スクワット</h3>
+                  <p>椅子に座るように腰を下げます。</p>
+                </div>
+              </div>
+              <div class="motion-response-grid">
+                <section class="motion-response-card">
+                  <p class="motion-response-label">モーション見本</p>
+                  <div class="squat-demo" aria-hidden="true">
+                    <div class="pose-frame">
+                      <img src="assets/guide-standing-camera.png" alt="" />
+                      <span class="pose-caption">立つ</span>
+                    </div>
+                    <span class="motion-sequence-arrow">→</span>
+                    <div class="pose-frame">
+                      <img src="assets/guide-squat-camera.png" alt="" />
+                      <span class="pose-caption">しゃがむ</span>
+                    </div>
+                  </div>
+                  <strong>無理のない深さでしゃがむ</strong>
+                  <p>犬が降下したら、立った姿勢へ戻ります。</p>
+                </section>
+
+                <span class="motion-response-arrow" aria-hidden="true">→</span>
+
+                <section class="motion-response-card motion-response-card--game">
+                  <p class="motion-response-label">ゲーム画面の変化</p>
+                  <div class="dog-drop-demo" aria-hidden="true">
+                    <img class="drop-dog drop-dog--before" src="assets/guide-dog-white.png" alt="" />
+                    <span>↓</span>
+                    <img class="drop-dog drop-dog--after" src="assets/guide-dog-white.png" alt="" />
+                  </div>
+                  <strong>犬が素早く降下</strong>
+                  <p>スクワットで、犬を下へ素早く移動します。</p>
+                </section>
+              </div>
+            </article>
+          </div>
+
+          <div class="game-goal-panel">
+            <span class="game-flow-number" aria-hidden="true">4</span>
+            <div class="game-goal-copy">
+              <h3>同じ犬種がそろうとポイント！</h3>
+              <p>Level 1では、落ちてくる犬を同じ犬種のレーンへ移動させます。</p>
+            </div>
+            <div class="game-goal-visual" aria-hidden="true">
+              <img src="assets/guide-dog-white.png" alt="" />
+              <span>＋</span>
+              <img src="assets/guide-dog-white.png" alt="" />
+              <strong>ポイント！</strong>
+            </div>
+          </div>
 
           <figure class="guide-live-screen">
             <img
