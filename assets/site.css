@@ -319,6 +319,8 @@ p { margin: 0; }
 .gameplay-shot {
   position: relative;
   z-index: 2;
+  grid-column: 1;
+  grid-row: 1;
   width: min(100%, 310px);
   justify-self: center;
   overflow: hidden;
@@ -333,7 +335,12 @@ p { margin: 0; }
   display: block;
 }
 
-.motion-rail { display: grid; gap: 14px; }
+.motion-rail {
+  grid-column: 2;
+  grid-row: 1;
+  display: grid;
+  gap: 14px;
+}
 
 .motion-card {
   min-width: 0;
@@ -365,11 +372,10 @@ p { margin: 0; }
 }
 
 .hero-stage-label {
-  position: absolute;
-  z-index: 3;
-  right: 20px;
-  bottom: 20px;
-  max-width: 195px;
+  grid-column: 1 / -1;
+  grid-row: 2;
+  justify-self: end;
+  max-width: min(100%, 360px);
   padding: 10px 14px;
   border-radius: 14px;
   background: var(--navy);
@@ -860,7 +866,7 @@ details[open] summary::after { content: "−"; }
   .gameplay-shot { border-width: 6px; border-radius: 25px; }
   .motion-card { padding: 10px; border-radius: 16px; }
   .motion-card img { height: 112px; }
-  .hero-stage-label { right: 14px; bottom: 14px; max-width: 165px; }
+  .hero-stage-label { max-width: 100%; }
   .fact-grid,
   .step-grid,
   .priority-grid,
@@ -891,7 +897,7 @@ details[open] summary::after { content: "−"; }
   .motion-card img { height: 95px; }
   .motion-card strong { font-size: 13px; }
   .motion-card span { font-size: 11px; }
-  .hero-stage-label { max-width: 145px; padding: 8px 10px; font-size: 11px; }
+  .hero-stage-label { max-width: 100%; padding: 8px 10px; font-size: 11px; }
   .mechanic-grid { grid-template-columns: 1fr; }
   .phone-pair { gap: 10px; }
   .phone-pair img { border-width: 4px; border-radius: 18px; }
