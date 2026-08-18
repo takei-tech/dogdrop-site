@@ -3,92 +3,161 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="DogDropは、前面カメラで体を動かして犬と遊ぶ運動ゲームです。" />
-    <title>DogDrop | 体を動かして犬と遊ぶ運動ゲーム</title>
+    <meta name="description" content="DogDropは、体を動かして犬と遊ぶiPhone・iPad向け運動ゲームです。" />
+    <title>DogDrop | 体を動かして、犬と遊ぼう。</title>
     <link rel="icon" href="assets/app-icon.png" />
     <link rel="stylesheet" href="assets/site.css" />
   </head>
-  <body>
-    <header class="site-header">
-      <a class="brand" href="index.html" aria-label="DogDrop ホーム">
-        <img src="assets/app-icon.png" alt="DogDropアプリアイコン" />
-        <span>DogDrop</span>
+  <body class="site-shell">
+    <a class="skip-link" href="#main-content">本文へ移動</a>
+    <header class="site-header" data-od-id="site-header">
+      <a class="brand" href="index.html" aria-label="DogDrop ホーム" data-od-id="header-brand">
+        <img src="assets/app-icon.png" alt="" />
+        <span class="brand-name">DogDrop</span>
       </a>
-      <nav aria-label="主要メニュー">
+      <nav class="site-nav" aria-label="主要メニュー" data-od-id="primary-navigation">
         <a href="guide.html">遊び方</a>
-        <a href="#screens">画面紹介</a>
         <a href="support.html">サポート</a>
         <a href="privacy.html">プライバシー</a>
       </nav>
     </header>
 
-    <main>
-      <section class="hero">
+    <main id="main-content">
+      <section class="hero" aria-labelledby="hero-title" data-od-id="home-hero">
         <div class="hero-copy">
           <p class="eyebrow">MOVE, PLAY, MATCH!</p>
-          <h1>体を動かして、<br />犬と遊ぼう。</h1>
-          <p class="lead">DogDropは、iPhoneまたはiPadの前面カメラで体の動きを読み取りながら遊ぶ、犬が主役の運動ゲームです。</p>
+          <h1 id="hero-title" data-od-id="hero-heading">体を動かして、<br />犬と遊ぼう。</h1>
+          <p class="lead">
+            DogDropは、iPhoneまたはiPadの前面カメラで体の動きを読み取り、左右の一歩とスクワットで犬を動かす運動ゲームです。
+          </p>
           <div class="hero-actions">
-            <a class="button primary" href="guide.html">はじめての方へ</a>
-            <a class="text-link" href="support.html">サポートとよくある質問</a>
+            <a class="button button-primary" href="guide.html" data-od-id="hero-primary-cta">遊び方を見る</a>
+            <a class="text-link" href="support.html" data-od-id="hero-support-link">困ったときはサポート</a>
           </div>
-          <p class="note">カメラ映像や骨格座標は保存・送信しません。</p>
+          <p class="privacy-note">カメラ映像や身体の骨格座標は、端末上で処理し、保存・送信しません。</p>
         </div>
-        <div class="hero-art" aria-label="DogDropのゲーム画面イメージ">
-          <img src="assets/title.png" alt="DogDropのタイトル画面イメージ" />
-          <span class="art-badge">1分から、気軽に運動</span>
+
+        <div class="hero-stage" aria-label="体の動きとDogDropのゲーム画面の関係" data-od-id="hero-gameplay-stage">
+          <figure class="gameplay-shot" data-od-id="hero-gameplay-image">
+            <img
+              src="assets/level1-gameplay.png"
+              width="1488"
+              height="2266"
+              alt="DogDropのLevel 1。上から落ちる白い犬を、画面下の同じ犬種のレーンへ動かしているゲーム画面"
+            />
+          </figure>
+          <div class="motion-rail" aria-label="動作見本">
+            <div class="motion-card" data-od-id="motion-card-neutral">
+              <img src="assets/guide-neutral-stance.png" width="512" height="512" alt="正面を向いて中央に立つ姿勢" />
+              <strong>中央に立つ</strong>
+              <span>次の動きの準備</span>
+            </div>
+            <div class="motion-card" data-od-id="motion-card-side-step">
+              <img src="assets/guide-side-step.png" width="512" height="512" alt="片足を横へ一歩出す姿勢" />
+              <strong>横へ一歩</strong>
+              <span>犬が1レーン移動</span>
+            </div>
+          </div>
+          <p class="hero-stage-label">あなたの一歩が、画面の犬の動きになります。</p>
         </div>
       </section>
 
-      <section class="section intro" aria-labelledby="intro-title">
-        <p class="eyebrow">DOGDROPについて</p>
-        <h2 id="intro-title">ステップとスクワット。<br />毎日の動きがゲームになる。</h2>
-        <p>左右ステップで犬を動かし、スクワットを使って落ちてくる犬をそろえます。短い時間でも、遊びながら自然に体を動かせるように設計しました。</p>
-      </section>
-
-      <section class="section play" id="how-to-play" aria-labelledby="play-title">
+      <section class="section" aria-labelledby="facts-title" data-od-id="home-key-facts">
         <div class="section-heading">
-          <p class="eyebrow">HOW TO PLAY</p>
-          <h2 id="play-title">遊び方は、かんたん。</h2>
+          <p class="eyebrow">QUICK START</p>
+          <h2 id="facts-title" data-od-id="facts-heading">すぐに、シンプルに。</h2>
         </div>
-        <ol class="steps">
-          <li><span>01</span><h3>初回の確認</h3><p>カメラを許可し、任意の利用状況データを送信するか選びます。</p></li>
-          <li><span>02</span><h3>Levelと時間を選ぶ</h3><p>まずはLevel 1から。プレイ時間は1分から選べます。</p></li>
-          <li><span>03</span><h3>端末を置いて安全確認</h3><p>画面を自分へ向けて腰くらいの高さに置き、周囲と体調を確認します。</p></li>
-          <li><span>04</span><h3>姿勢を整えて遊ぶ</h3><p>約1.5m離れて全身を映し、案内された一歩とスクワットを練習します。</p></li>
+        <div class="fact-grid">
+          <article class="fact-card" data-od-id="fact-card-duration">
+            <span>プレイ時間</span>
+            <strong>1分から</strong>
+          </article>
+          <article class="fact-card" data-od-id="fact-card-player">
+            <span>カメラに入る人</span>
+            <strong>プレイヤー1人</strong>
+          </article>
+          <article class="fact-card" data-od-id="fact-card-device">
+            <span>対応する端末</span>
+            <strong>iPhone / iPad</strong>
+          </article>
+        </div>
+      </section>
+
+      <section class="section start-section" aria-labelledby="start-title" data-od-id="home-start-steps">
+        <div class="section-heading">
+          <p class="eyebrow">BEFORE YOU PLAY</p>
+          <h2 id="start-title" data-od-id="start-heading">はじめるまで、3ステップ。</h2>
+          <p>最初はLevel 1と1分プレイがおすすめです。画面の案内に沿って、安全を確認してから始めます。</p>
+        </div>
+        <ol class="step-grid">
+          <li class="step-card" data-od-id="start-step-select">
+            <span class="step-number">1</span>
+            <h3>Levelと時間を選ぶ</h3>
+            <p>遊びたいLevelと、1分から選べるプレイ時間を決めます。</p>
+          </li>
+          <li class="step-card" data-od-id="start-step-safety">
+            <span class="step-number">2</span>
+            <h3>端末と安全を確認</h3>
+            <p>端末を倒れにくい場所へ置き、左右と後方のスペース、床、体調を確認します。</p>
+          </li>
+          <li class="step-card" data-od-id="start-step-posture">
+            <span class="step-number">3</span>
+            <h3>姿勢を整えて遊ぶ</h3>
+            <p>約1.5m離れて全身を枠へ合わせ、正面を向いて操作を練習します。</p>
+          </li>
         </ol>
       </section>
 
-      <section class="section screens" id="screens" aria-labelledby="screens-title">
-        <div class="section-heading split-heading">
+      <section class="section play-section" aria-labelledby="play-title" data-od-id="home-gameplay-explainer">
+        <div class="play-layout">
+          <figure class="samoyed-frame" data-od-id="home-samoyed-image">
+            <img src="assets/start-screen.png" width="1536" height="1024" loading="lazy" decoding="async" alt="DogDropに登場する白いサモエド" />
+          </figure>
           <div>
-            <p class="eyebrow">SCREEN GUIDE</p>
-            <h2 id="screens-title">犬たちと、動き出そう。</h2>
+            <div class="section-heading">
+              <p class="eyebrow">HOW IT MOVES</p>
+              <h2 id="play-title" data-od-id="play-heading">体の動きが、犬の動きになる。</h2>
+              <p>覚える操作は、一歩とスクワット。落ちてくる犬を同じ犬種のレーンへ導きます。</p>
+            </div>
+            <div class="mechanic-grid">
+              <article class="mechanic-card" data-od-id="mechanic-card-fall">
+                <strong>犬が落ちる</strong>
+                <p>画面上から犬がゆっくり落ちてきます。</p>
+              </article>
+              <article class="mechanic-card" data-od-id="mechanic-card-step">
+                <strong>一歩で1レーン移動</strong>
+                <p>片足を横へ出した方向へ、犬が一つ移動します。</p>
+              </article>
+              <article class="mechanic-card" data-od-id="mechanic-card-squat">
+                <strong>スクワットで降下</strong>
+                <p>無理のない深さでしゃがむと、犬が素早く下へ進みます。</p>
+              </article>
+              <article class="mechanic-card" data-od-id="mechanic-card-match">
+                <strong>同じ犬種でポイント</strong>
+                <p>落ちてきた犬を、画面下の同じ犬種へ合わせます。</p>
+              </article>
+            </div>
           </div>
-          <p>掲載画像はDogDropのキャラクターとアプリ画面のイメージです。App Store用のスクリーンショットは、公開ビルドから別途用意します。</p>
-        </div>
-        <div class="screen-grid">
-          <figure class="wide-shot"><img src="assets/start-screen.png" alt="DogDropに登場するサモエドのイメージ" /><figcaption>DogDropのサモエド</figcaption></figure>
-          <figure class="phone-shot"><img src="assets/level-guide.png" alt="DogDropのLevel 1のルール説明画面イメージ" /><figcaption>レベルとルールの案内</figcaption></figure>
         </div>
       </section>
 
-      <section class="section device" aria-labelledby="device-title">
-        <p class="eyebrow">PLAY SAFELY</p>
-        <h2 id="device-title">対応機種と安全な遊び方</h2>
-        <div class="device-grid">
-          <div><h3>対応機種</h3><p>iOS／iPadOS 15.0以降を搭載し、前面カメラで全身を映せるiPhoneとiPadに対応します。対応状況はApp Storeの配信情報をご確認ください。</p></div>
-          <div><h3>iPadをおすすめします</h3><p>全身を映すため、端末から約1.5m離れてプレイします。iPhoneでは画面が小さく見えやすいため、画面を見やすく確認できるiPadでのプレイをおすすめします。</p></div>
-          <div><h3>iPhoneで遊ぶ場合</h3><p>iPhoneでプレイする場合は、画面ミラーリングなどで外部モニターへ接続し、大きな画面に表示する環境をおすすめします。</p></div>
-          <div><h3>安全のために</h3><p>周囲に十分なスペースを確保し、無理のない範囲でお楽しみください。DogDropは医療、診断、治療、リハビリテーションを目的とするアプリではありません。</p></div>
+      <section class="section" aria-labelledby="closing-title" data-od-id="home-closing-cta">
+        <div class="closing-panel">
+          <div>
+            <h2 id="closing-title">最初の1分を、犬といっしょに。</h2>
+            <p>準備、姿勢、二つの操作を、3つの場面で短く確認できます。</p>
+          </div>
+          <a class="button button-primary" href="guide.html" data-od-id="closing-primary-cta">遊び方を見る</a>
         </div>
       </section>
     </main>
 
-    <footer class="site-footer">
-      <a class="brand" href="index.html"><img src="assets/app-icon.png" alt="" /><span>DogDrop</span></a>
-      <div><a href="guide.html">遊び方</a><a href="support.html">サポート</a><a href="privacy.html">プライバシー</a></div>
-      <p>© 2026 DogDrop</p>
+    <footer class="site-footer" data-od-id="site-footer">
+      <a class="brand" href="index.html" aria-label="DogDrop ホーム"><img src="assets/app-icon.png" alt="" /><span class="brand-name">DogDrop</span></a>
+      <nav class="footer-nav" aria-label="フッターメニュー">
+        <a href="guide.html">遊び方</a><a href="support.html">サポート</a><a href="privacy.html">プライバシー</a>
+      </nav>
+      <span>© 2026 DogDrop</span>
     </footer>
   </body>
 </html>

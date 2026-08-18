@@ -3,28 +3,105 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="DogDropのプライバシーポリシー。" />
-    <title>プライバシーポリシー | DogDrop</title>
+    <meta name="description" content="DogDropにおけるカメラ、ゲーム履歴、任意の利用状況データの取扱い。" />
+    <title>プライバシー | DogDrop</title>
     <link rel="icon" href="assets/app-icon.png" />
     <link rel="stylesheet" href="assets/site.css" />
   </head>
-  <body>
-    <header class="site-header"><a class="brand" href="index.html"><img src="assets/app-icon.png" alt="DogDropアプリアイコン" /><span>DogDrop</span></a><nav aria-label="主要メニュー"><a href="index.html">ホーム</a><a href="guide.html">遊び方</a><a href="support.html">サポート</a></nav></header>
-    <main class="article-page privacy-page">
-      <p class="eyebrow">PRIVACY POLICY</p>
-      <h1>プライバシーポリシー</h1>
-      <p class="updated">最終更新日：2026年8月18日</p>
-      <p class="article-lead">DogDrop（以下「本アプリ」）における情報の取扱いを説明します。</p>
+  <body class="site-shell">
+    <a class="skip-link" href="#main-content">本文へ移動</a>
+    <header class="site-header" data-od-id="site-header">
+      <a class="brand" href="index.html" aria-label="DogDrop ホーム" data-od-id="header-brand">
+        <img src="assets/app-icon.png" alt="" /><span class="brand-name">DogDrop</span>
+      </a>
+      <nav class="site-nav" aria-label="主要メニュー" data-od-id="primary-navigation">
+        <a href="guide.html">遊び方</a>
+        <a href="support.html">サポート</a>
+        <a href="privacy.html" aria-current="page">プライバシー</a>
+      </nav>
+    </header>
 
-      <section><h2>1. カメラと身体動作の利用</h2><p>本アプリは、ゲーム内の操作を検出するためにiPhoneまたはiPadの前面カメラを使用します。姿勢調整中のみ、前面カメラの映像に人型の枠や認識した関節の点・線を重ねて画面へ表示します。操作練習とゲーム中はカメラ映像を表示しません。</p><p>カメラ映像および身体の骨格座標は端末上でリアルタイムに処理し、保存または外部へ送信しません。</p></section>
-      <section><h2>2. 端末内に保存する情報</h2><p>スコア、プレイ時間、運動回数、自己ベスト、日ごとのフィードバックなどのゲーム履歴は、機能提供のため端末内に保存します。アカウントやクラウドへ同期する機能はありません。</p><p>分析データの送信に同意した場合は、端末内のゲーム履歴そのものではなく、次項に記載する一部の利用状況データを分析のため送信します。</p></section>
-      <section><h2>3. 任意の分析データ</h2><p>本アプリでは、初回に表示される同意画面で許可した場合に限り、Unity Analyticsを利用してゲームの利用状況を分析します。</p><p>送信する可能性がある利用状況データには、Level、プレイ時間、レーン数・回転・ケージの設定、操作練習の完了状況とステップ数、スコア、成功／失敗数、ベストコンボ、正答率、運動回数（合計・右・左・スクワット）、トラッキング喪失回数、安全停止の状態が含まれます。</p><p>Unity Analyticsが標準的に取り扱う情報として、IPアドレス、IPアドレスから推定されるおおよその位置情報、インストールごとの識別子、ユーザーID、IDFV（ベンダー識別子）が含まれる場合があります。本アプリはGPSによる正確な位置情報を要求しません。</p><p>これらの情報は、機能の利用状況の把握およびアプリ改善のために使用します。広告配信を目的としたトラッキングには使用しません。</p></section>
-      <section><h2>4. 保存・送信しない情報</h2><p>本アプリは、氏名、連絡先、カメラ映像、身体の骨格座標、HealthKitの健康記録、診療情報を保存または送信しません。</p></section>
-      <section><h2>5. 同意の撤回とデータ削除</h2><p>分析データの送信に同意しない場合は、初回の確認画面で「送信しない」を選択できます。すでに同意した後に今後の送信を停止したい場合は、本アプリを削除して再インストールし、初回画面で「送信しない」を選択してください。</p><p>Unity Analyticsに送信済みの分析データの削除を希望する場合は、件名を「DogDrop データ削除依頼」として、下記の窓口へお問い合わせください。対応に必要な範囲で、アプリのバージョンや端末情報をお尋ねする場合があります。</p><p><a class="support-email" href="mailto:dogdrop.support@gmail.com">dogdrop.support@gmail.com</a></p></section>
-      <section><h2>6. 外部サービス</h2><p>任意の分析データにはUnity Analyticsを使用します。Unityのゲーム利用者向けプライバシー情報は、<a href="https://unity.com/legal/game-player-and-app-user-privacy-policy" rel="noreferrer">Unity Game Player and App User Privacy Policy</a>をご確認ください。</p></section>
-      <section><h2>7. 本ポリシーの変更</h2><p>本アプリの機能または情報の取扱いを変更する場合、本ページを更新します。</p></section>
-      <section><h2>8. お問い合わせ</h2><p>プライバシーに関するお問い合わせは、<a href="support.html">サポートページ</a>からご連絡ください。</p></section>
+    <main id="main-content">
+      <header class="page-hero" data-od-id="privacy-hero">
+        <p class="eyebrow">PRIVACY POLICY</p>
+        <h1 data-od-id="privacy-heading">プライバシー</h1>
+        <p class="updated">最終更新日：2026年8月18日</p>
+        <p class="lead">DogDropで扱う情報を、最初に3つの要点でお知らせします。詳しい内容は下に続きます。</p>
+      </header>
+
+      <div class="article-wrap">
+        <section class="privacy-summary" aria-label="プライバシーの3つの要点" data-od-id="privacy-summary">
+          <article class="summary-card" data-od-id="privacy-summary-camera">
+            <strong>カメラは端末上で処理</strong>
+            <p>カメラ映像・身体の骨格座標は、保存・送信しません。</p>
+          </article>
+          <article class="summary-card" data-od-id="privacy-summary-history">
+            <strong>ゲーム履歴は端末内</strong>
+            <p>スコアや運動回数などは、機能提供のため端末内に保存します。</p>
+          </article>
+          <article class="summary-card" data-od-id="privacy-summary-analytics">
+            <strong>利用状況データは同意時のみ</strong>
+            <p>送信に同意した場合に限り、アプリ改善のため利用します。</p>
+          </article>
+        </section>
+
+        <article class="policy-body" data-od-id="privacy-policy-body">
+          <section class="policy-section" aria-labelledby="policy-camera-title" data-od-id="policy-camera">
+            <h2 id="policy-camera-title">1. カメラと身体動作の利用</h2>
+            <p>DogDrop（以下「本アプリ」）は、ゲーム内の操作を検出するためにiPhoneまたはiPadの前面カメラを使用します。姿勢調整中のみ、前面カメラの映像に人型の枠や認識した関節の点・線を重ねて画面へ表示します。操作練習とゲーム中はカメラ映像を表示しません。</p>
+            <p>カメラ映像および身体の骨格座標は端末上でリアルタイムに処理し、保存または外部へ送信しません。</p>
+          </section>
+
+          <section class="policy-section" aria-labelledby="policy-local-title" data-od-id="policy-local-storage">
+            <h2 id="policy-local-title">2. 端末内に保存する情報</h2>
+            <p>スコア、プレイ時間、運動回数、自己ベスト、日ごとのフィードバックなどのゲーム履歴は、機能提供のため端末内に保存します。アカウントやクラウドへ同期する機能はありません。</p>
+            <p>分析データの送信に同意した場合は、端末内のゲーム履歴そのものではなく、次項に記載する一部の利用状況データを分析のため送信します。</p>
+          </section>
+
+          <section class="policy-section" aria-labelledby="policy-analytics-title" data-od-id="policy-analytics">
+            <h2 id="policy-analytics-title">3. 任意の分析データ</h2>
+            <p>本アプリでは、初回に表示される同意画面で許可した場合に限り、Unity Analyticsを利用してゲームの利用状況を分析します。</p>
+            <p>送信する可能性がある利用状況データには、Level、プレイ時間、レーン数・回転・ケージの設定、操作練習の完了状況とステップ数、スコア、成功／失敗数、ベストコンボ、正答率、運動回数（合計・右・左・スクワット）、トラッキング喪失回数、安全停止の状態が含まれます。</p>
+            <p>Unity Analyticsが標準的に取り扱う情報として、IPアドレス、IPアドレスから推定されるおおよその位置情報、インストールごとの識別子、ユーザーID、IDFV（ベンダー識別子）が含まれる場合があります。本アプリはGPSによる正確な位置情報を要求しません。</p>
+            <p>これらの情報は、機能の利用状況の把握およびアプリ改善のために使用します。広告配信を目的としたトラッキングには使用しません。</p>
+          </section>
+
+          <section class="policy-section" aria-labelledby="policy-not-stored-title" data-od-id="policy-not-stored">
+            <h2 id="policy-not-stored-title">4. 保存・送信しない情報</h2>
+            <p>本アプリは、氏名、連絡先、カメラ映像、身体の骨格座標、HealthKitの健康記録、診療情報を保存または送信しません。</p>
+          </section>
+
+          <section class="policy-section" aria-labelledby="policy-withdraw-title" data-od-id="policy-withdrawal">
+            <h2 id="policy-withdraw-title">5. 同意の撤回とデータ削除</h2>
+            <p>分析データの送信に同意しない場合は、初回の確認画面で「送信しない」を選択できます。すでに同意した後に今後の送信を停止したい場合は、本アプリを削除して再インストールし、初回画面で「送信しない」を選択してください。</p>
+            <p>Unity Analyticsに送信済みの分析データの削除を希望する場合は、件名を「DogDrop データ削除依頼」として、下記の窓口へお問い合わせください。対応に必要な範囲で、アプリのバージョンや端末情報をお尋ねする場合があります。</p>
+            <p><a class="button button-secondary" href="mailto:dogdrop.support@gmail.com" data-od-id="privacy-email-link">dogdrop.support@gmail.com</a></p>
+          </section>
+
+          <section class="policy-section" aria-labelledby="policy-service-title" data-od-id="policy-external-service">
+            <h2 id="policy-service-title">6. 外部サービス</h2>
+            <p>任意の分析データにはUnity Analyticsを使用します。Unityのゲーム利用者向けプライバシー情報は、<a class="text-link" href="https://unity.com/legal/game-player-and-app-user-privacy-policy" rel="noreferrer">Unity Game Player and App User Privacy Policy</a>をご確認ください。</p>
+          </section>
+
+          <section class="policy-section" aria-labelledby="policy-change-title" data-od-id="policy-changes">
+            <h2 id="policy-change-title">7. 本ポリシーの変更</h2>
+            <p>本アプリの機能または情報の取扱いを変更する場合、本ページを更新します。</p>
+          </section>
+
+          <section class="policy-section" aria-labelledby="policy-contact-title" data-od-id="policy-contact">
+            <h2 id="policy-contact-title">8. お問い合わせ</h2>
+            <p>プライバシーに関するお問い合わせは、<a class="text-link" href="support.html#contact">サポートページ</a>からご連絡ください。</p>
+          </section>
+        </article>
+      </div>
     </main>
-    <footer class="site-footer"><a class="brand" href="index.html"><img src="assets/app-icon.png" alt="" /><span>DogDrop</span></a><div><a href="index.html">ホーム</a><a href="guide.html">遊び方</a><a href="support.html">サポート</a></div><p>© 2026 DogDrop</p></footer>
+
+    <footer class="site-footer" data-od-id="site-footer">
+      <a class="brand" href="index.html" aria-label="DogDrop ホーム"><img src="assets/app-icon.png" alt="" /><span class="brand-name">DogDrop</span></a>
+      <nav class="footer-nav" aria-label="フッターメニュー">
+        <a href="guide.html">遊び方</a><a href="support.html">サポート</a><a href="privacy.html">プライバシー</a>
+      </nav>
+      <span>© 2026 DogDrop</span>
+    </footer>
   </body>
 </html>
