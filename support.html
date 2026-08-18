@@ -27,7 +27,7 @@
     <main class="article-page support-page">
       <p class="eyebrow">SUPPORT</p>
       <h1>サポート</h1>
-      <p class="updated">最終更新日：2026年8月5日</p>
+      <p class="updated">最終更新日：2026年8月18日</p>
       <p class="article-lead">
         カメラや身体の認識、動作入力、ゲーム、記録に問題があるときの解決方法をご案内します。
       </p>
@@ -63,20 +63,24 @@
             <span>左右へ一歩動き、無理なくしゃがめる広さを確保します。</span>
           </li>
           <li>
-            <strong>端末を安定させる</strong>
-            <span>iPhone／iPadの前面カメラが身体の正面を向くよう、倒れにくい場所へ置きます。</span>
+            <strong>「準備 1 / 2」で端末を置く</strong>
+            <span>画面を自分の方へ向け、倒れにくい場所へ置きます。腰くらいの高さに置くと、全身が映りやすくなります。</span>
           </li>
           <li>
-            <strong>およそ1.5m離れる</strong>
-            <span>頭から足元まで、特に両膝と両足がカメラに入る位置へ移動します。</span>
+            <strong>「準備 2 / 2」で安全を確認する</strong>
+            <span>物・コード・段差、床の滑りやすさ、体調を確認します。必要なら壁や椅子の近くで行います。</span>
+          </li>
+          <li>
+            <strong>姿勢調整へ進んだら約1.5m離れる</strong>
+            <span>「確認して 1.5m離れる」を選び、頭から足元まで、特に両膝と両足がカメラに入る位置へ移動します。</span>
+          </li>
+          <li>
+            <strong>プレイヤー1人で正面に立つ</strong>
+            <span>カメラにはプレイヤー1人だけが入るようにし、正面を向いた姿勢を数秒保ちます。</span>
           </li>
           <li>
             <strong>明るさを整える</strong>
             <span>室内を十分に明るくし、全身へできるだけ均一に光が当たる場所を選びます。暗い場所と強い逆光を避けると、身体の輪郭を認識しやすくなり、モーション判定が安定しやすくなります。</span>
-          </li>
-          <li>
-            <strong>正面で静止する</strong>
-            <span>「カメラ位置を確認」の案内に従い、正面を向いた姿勢を数秒保ちます。</span>
           </li>
         </ol>
         <div class="support-callout safety-callout">
@@ -104,7 +108,7 @@
           </div>
           <figcaption>
             <strong>初回起動時のカメラアクセス確認画面</strong>
-            「許可」を選ぶと、前面カメラを使った身体認識へ進みます。表示はiOS／iPadOSのバージョンによって異なる場合があります。
+            「許可」を選ぶと、前面カメラを使った身体認識を利用できるようになります。表示はiOS／iPadOSのバージョンによって異なる場合があります。
           </figcaption>
         </figure>
 
@@ -121,36 +125,36 @@
             <li>一覧にある「DogDrop」をオンにします。「設定」→「アプリ」→「DogDrop」→「カメラ」から変更できる場合もあります。</li>
             <li>DogDropをいったん終了し、もう一度起動します。</li>
           </ol>
-          <p class="resolved-state"><strong>正常な状態</strong>「カメラ位置を確認」が表示され、全身の確認が始まります。</p>
+          <p class="resolved-state"><strong>正常な状態</strong>DogDropを利用でき、Levelと時間を選んだ後に「準備 1 / 2 端末を置く」へ進めます。</p>
           <p class="escalation-note">
             <strong>解決しない場合</strong>設定画面にDogDropが表示されるか、画面に出たメッセージ、端末とOSの情報を<a href="#contact">お問い合わせ</a>へ添えてください。
           </p>
         </article>
 
         <article class="troubleshooting-card">
-          <h3>カメラが起動しない／映像が表示されない</h3>
+          <h3>カメラ映像が表示されない／姿勢調整が進まない</h3>
           <div class="trouble-summary">
-            <p><strong>症状</strong>カメラ許可後も「全身を確認中…」から進まない、またはカメラが動いているか分からない。</p>
+            <p><strong>症状</strong>姿勢調整でカメラ映像が表示されない、「1.5m離れて 全身を枠へ」から進まない、または「OK！」が表示されない。</p>
             <p><strong>主な原因</strong>権限が反映されていない、カメラの開始に失敗した、身体が認識範囲に入っていない。</p>
           </div>
           <div class="support-note">
-            <strong>DogDropはカメラ映像そのものを画面に表示しません。</strong>
-            代わりに、身体の認識状態を関節点と線によるスティック表示で示します。「映像が見えない」ことだけでは異常ではありません。
+            <strong>カメラ映像を表示するのは姿勢調整中だけです。</strong>
+            姿勢調整中は、前面カメラの映像に人型の枠と、認識した関節の点・線を重ねて表示します。操作練習とゲーム中はカメラ映像を表示しません。
           </div>
           <figure class="support-screenshot support-screenshot--tracking">
             <div class="support-screenshot-frame">
               <img
-                src="assets/support-body-tracking-stick.png"
+                src="assets/v1-1-1-posture-adjustment.png"
                 width="1170"
                 height="2532"
                 loading="lazy"
                 decoding="async"
-                alt="DogDropのカメラ位置確認画面。身体の主な関節が緑色の点、関節のつながりが白い線で表示されている。"
+                alt="DogDropの姿勢調整画面。前面カメラ映像に全身を合わせる人型の枠が重ねて表示されている。"
               />
             </div>
             <figcaption>
-              <strong>身体の認識状態を示すスティック表示</strong>
-              緑色の関節点と白い線が全身に表示されれば、主な関節を認識できている目安です。表示に使う身体の骨格座標は端末上でリアルタイムに処理し、保存・送信しません。
+              <strong>v1.1.1の姿勢調整画面</strong>
+              約1.5m離れて全身を人型の枠へ合わせます。身体を認識すると関節の点・線が重なり、安定すると「OK！」が表示されます。カメラ映像と身体の骨格座標は保存・送信しません。
             </figcaption>
           </figure>
           <h4>上から順に試してください</h4>
@@ -161,7 +165,7 @@
             <li>改善しない場合は、iPhone／iPadを再起動します。</li>
             <li>前面カメラを覆っているケースや物がないことを確認します。</li>
           </ol>
-          <p class="resolved-state"><strong>正常な状態</strong>全身を認識すると姿勢調整が進み、操作練習が表示されます。</p>
+          <p class="resolved-state"><strong>正常な状態</strong>前面カメラ映像に人型の枠や関節の点・線が重なり、全身を認識すると「OK！」の後に操作練習へ進みます。</p>
           <p class="escalation-note">
             <strong>解決しない場合</strong>許可状態、再起動の結果、表示メッセージ、問題が毎回起きるかを<a href="#contact">お問い合わせ</a>へ添えてください。
           </p>
@@ -175,7 +179,7 @@
         <article class="troubleshooting-card">
           <h3>認識されない／プレイ中に認識が外れる</h3>
           <div class="trouble-summary">
-            <p><strong>症状</strong>「全身を確認中…」が続く、正面姿勢を求められる、プレイが自動的に一時停止する。</p>
+            <p><strong>症状</strong>「1.5m離れて 全身を枠へ」「正面を向いて立つ」「足まで枠の中へ」から進まない、またはプレイが自動的に一時停止する。</p>
             <p><strong>主な原因</strong>頭・膝・足元が画面外、複数人がカメラの認識範囲に入っている、逆光や暗さ、服と背景が同系色、身体の一部が物に隠れている。</p>
           </div>
           <div class="support-note">
@@ -397,9 +401,9 @@
           <div>
             <h3>データの取扱い</h3>
             <ul>
-              <li>カメラ映像と身体の骨格座標は端末上で処理し、保存・送信しません。</li>
-              <li>ゲーム履歴は端末内へ保存し、アプリから外部へ送信しません。</li>
-              <li>任意の利用状況データは、同意した場合に限って分析のため送信します。</li>
+              <li>姿勢調整中のみカメラ映像を画面に表示します。カメラ映像と身体の骨格座標は端末上で処理し、保存・送信しません。</li>
+              <li>ゲーム履歴は端末内へ保存し、アカウントやクラウドへ同期しません。</li>
+              <li>同意した場合に限り、ゲーム履歴とは別に、限られた利用状況データを分析のため送信します。</li>
             </ul>
             <p><a class="text-link" href="privacy.html">プライバシーポリシーの詳細を確認する</a></p>
           </div>
@@ -432,6 +436,10 @@
         <h3>更新情報</h3>
         <dl class="update-list">
           <div>
+            <dt>2026年8月18日</dt>
+            <dd>v1.1.1の端末設置、安全チェック、姿勢調整画面に合わせて、準備手順、カメラ表示、身体認識、データ取扱いの説明を更新しました。</dd>
+          </div>
+          <div>
             <dt>2026年8月5日</dt>
             <dd>全身を映すための端末との距離案内を、約1.5mに統一しました。</dd>
           </div>
@@ -445,7 +453,7 @@
           </div>
           <div>
             <dt>2026年7月25日</dt>
-            <dd>初回起動時のカメラアクセス確認画面、身体認識状態のスティック表示、任意の利用状況データ送信確認画面を追加しました。</dd>
+            <dd>初回起動時のカメラアクセス確認画面、身体認識の案内、任意の利用状況データ送信確認画面を追加しました。</dd>
           </div>
           <div>
             <dt>2026年7月24日</dt>
