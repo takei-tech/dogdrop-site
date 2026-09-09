@@ -775,6 +775,14 @@ details[open] summary::after { content: "−"; }
 
 .support-column li + li { margin-top: 8px; }
 
+#music-credits > h3 { margin-top: 28px; }
+
+#music-credits .support-column h4 {
+  margin: 0;
+  color: var(--navy);
+  font: 700 21px/1.4 var(--display-font);
+}
+
 .contact-panel {
   margin-top: 46px;
   padding: clamp(28px, 5vw, 48px);
