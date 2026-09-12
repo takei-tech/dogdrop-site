@@ -1,29 +1,28 @@
 :root {
-  --bg: oklch(98.623% 0.0142 84.58);
-  --surface: oklch(100% 0 89.88);
-  --fg: oklch(25.689% 0.0306 243.48);
-  --muted: oklch(51.157% 0.0335 224.35);
-  --border: oklch(91.084% 0.0119 203.46);
-  --accent: oklch(52.546% 0.1411 28.22);
-  --accent-dark: oklch(43.099% 0.1184 27.77);
-  --navy: oklch(29.958% 0.0502 238.55);
-  --sky: oklch(94.95% 0.0228 224.86);
-  --orange: oklch(76.268% 0.1393 54.96);
-  --coral: oklch(68.567% 0.1617 29.54);
-  --green: oklch(59.109% 0.0843 158.77);
-  --focus: oklch(47.762% 0.14 251.27);
-  --mint-soft: oklch(97.008% 0.0123 178.03);
-  --peach-soft: oklch(93.563% 0.0392 71.03);
-  --gold-soft: oklch(97.802% 0.0335 94.05);
-  --warning-soft: oklch(96.098% 0.0343 78.68);
-  --info-soft: oklch(96.535% 0.0138 219.62);
-  --danger-soft: oklch(97.051% 0.0146 33.07);
-  --success-soft: oklch(95.924% 0.0157 160.62);
+  /* Approved app palette: DogDropTheme's welcome and semantic UI colors. */
+  --bg: #f8faf5; /* WelcomeBackground */
+  --surface: #ffffff;
+  --fg: #1f2e3d; /* Ink */
+  --muted: #294557; /* InkSoft, opaque for small web text */
+  --border: #d1e0e6;
+  --accent: #2673a6; /* ActionBlue */
+  --accent-dark: color-mix(in srgb, var(--accent) 78%, var(--fg));
+  --navy: var(--fg);
+  --sky: #cbe8f2; /* WelcomeGlow */
+  --action: #ffd14f; /* WelcomeAction */
+  --action-shadow: #d6a22c; /* WelcomeActionShadow */
+  --green: #2b734f; /* SuccessText */
+  --focus: var(--accent);
+  --surface-blue: #e8f5fa; /* SelectedSurface */
+  --warning-soft: color-mix(in srgb, var(--action) 22%, var(--surface));
+  --info-soft: var(--surface-blue);
+  --danger-soft: color-mix(in srgb, #b8333b 8%, var(--surface));
+  --success-soft: color-mix(in srgb, var(--green) 8%, var(--surface));
   --display-font: ui-rounded, -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", sans-serif;
   --body-font: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", YuGothic, "Noto Sans JP", sans-serif;
   --mono-font: ui-monospace, "SFMono-Regular", Menlo, Monaco, Consolas, monospace;
-  --shadow-sm: 0 10px 26px oklch(25.689% 0.0306 243.48 / 0.08);
-  --shadow-lg: 0 22px 52px oklch(25.689% 0.0306 243.48 / 0.14);
+  --shadow-sm: 0 10px 26px rgb(38 77 97 / 9%);
+  --shadow-lg: 0 22px 52px rgb(38 77 97 / 12%);
   --radius-sm: 16px;
   --radius-md: 24px;
   --radius-lg: 34px;
@@ -77,13 +76,13 @@ summary:focus-visible {
 
 .site-header {
   width: var(--page);
-  min-height: 76px;
+  min-height: 88px;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 24px;
-  border-bottom: 1px solid color-mix(in oklch, var(--fg) 10%, transparent);
+  border-bottom: 1px solid var(--border);
 }
 
 .brand {
@@ -91,16 +90,25 @@ summary:focus-visible {
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  color: var(--navy);
-  font: 600 23px/1 var(--display-font);
+  flex-shrink: 0;
   text-decoration: none;
 }
 
-.brand img {
-  width: 40px;
-  height: 40px;
-  border-radius: 13px;
+.brand-icon {
+  display: block;
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
   object-fit: cover;
+}
+
+.brand-logo {
+  display: block;
+  width: 222px;
+  height: auto;
+  aspect-ratio: 3 / 1;
+  object-fit: contain;
 }
 
 .site-nav {
@@ -229,34 +237,34 @@ p { margin: 0; }
 }
 
 .button-primary {
-  background: var(--accent);
-  color: var(--surface);
-  box-shadow: 0 6px 0 var(--accent-dark);
+  background: var(--action);
+  color: var(--navy);
+  box-shadow: 0 6px 0 var(--action-shadow);
 }
 
 .button-primary:hover {
-  background: var(--accent-dark);
-  box-shadow: 0 4px 0 color-mix(in oklch, var(--accent-dark) 82%, var(--fg));
+  background: color-mix(in srgb, var(--action) 88%, var(--action-shadow));
+  box-shadow: 0 4px 0 var(--action-shadow);
   transform: translateY(2px);
 }
 
 .button-secondary {
-  border-color: color-mix(in oklch, var(--navy) 25%, var(--surface));
+  border-color: var(--border);
   background: var(--surface);
-  color: var(--navy);
+  color: var(--accent);
 }
 
 .button-secondary:hover {
-  border-color: var(--navy);
-  background: var(--sky);
-  color: var(--navy);
+  border-color: var(--accent);
+  background: var(--surface-blue);
+  color: var(--accent-dark);
 }
 
 .text-link {
   min-height: 44px;
   display: inline-flex;
   align-items: center;
-  color: var(--navy);
+  color: var(--accent);
   font-weight: 600;
   text-underline-offset: 0.24em;
 }
@@ -378,7 +386,7 @@ p { margin: 0; }
   max-width: min(100%, 360px);
   padding: 10px 14px;
   border-radius: 14px;
-  background: var(--navy);
+  background: var(--accent);
   color: var(--surface);
   box-shadow: var(--shadow-sm);
   font-size: 13px;
@@ -421,7 +429,7 @@ p { margin: 0; }
   font: 600 clamp(25px, 3vw, 36px)/1.35 var(--display-font);
 }
 
-.start-section { background: var(--mint-soft); }
+.start-section { background: var(--surface-blue); }
 
 .step-grid {
   grid-template-columns: repeat(3, 1fr);
@@ -439,7 +447,7 @@ p { margin: 0; }
   border-radius: 50%;
   display: grid;
   place-items: center;
-  background: var(--navy);
+  background: var(--accent);
   color: var(--surface);
   font: 600 16px/1 var(--display-font);
 }
@@ -465,7 +473,7 @@ p { margin: 0; }
 
 .samoyed-frame img {
   width: 100%;
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 1;
   display: block;
   object-fit: cover;
   object-position: center 38%;
@@ -487,13 +495,13 @@ p { margin: 0; }
   align-items: center;
   justify-content: space-between;
   gap: 32px;
-  background: var(--navy);
+  background: var(--accent);
   color: var(--surface);
 }
 
 .closing-panel h2 { color: var(--surface); }
 
-.closing-panel p { max-width: 58ch; margin-top: 12px; color: color-mix(in oklch, var(--surface) 80%, var(--navy)); }
+.closing-panel p { max-width: 58ch; margin-top: 12px; color: var(--surface); }
 
 .page-hero {
   padding-block: clamp(56px, 8vw, 96px) clamp(38px, 5vw, 62px);
@@ -607,7 +615,7 @@ p { margin: 0; }
   margin-top: 46px;
   padding: clamp(26px, 5vw, 42px);
   border-radius: var(--radius-lg);
-  background: var(--mint-soft);
+  background: var(--surface-blue);
 }
 
 .detail-group > h2 { font-size: clamp(26px, 3vw, 36px); }
@@ -644,7 +652,7 @@ summary::after {
   display: grid;
   place-items: center;
   background: var(--surface);
-  color: var(--navy);
+  color: var(--accent);
   content: "+";
   font-size: 20px;
   line-height: 1;
@@ -683,7 +691,7 @@ details[open] summary::after { content: "−"; }
   margin: 36px 0 54px;
   padding: clamp(24px, 4vw, 36px);
   border-radius: var(--radius-lg);
-  background: var(--navy);
+  background: var(--accent);
   box-shadow: var(--shadow-lg);
 }
 
@@ -787,7 +795,7 @@ details[open] summary::after { content: "−"; }
   margin-top: 46px;
   padding: clamp(28px, 5vw, 48px);
   border-radius: var(--radius-lg);
-  background: var(--mint-soft);
+  background: var(--surface-blue);
 }
 
 .contact-panel h2 { font-size: clamp(28px, 3.4vw, 40px); }
@@ -843,6 +851,64 @@ details[open] summary::after { content: "−"; }
 }
 
 .footer-nav { display: flex; justify-content: center; gap: 22px; }
+.site-footer .brand-logo { width: 174px; }
+.site-footer .brand-icon { width: 40px; height: 40px; border-radius: 12px; }
+
+/* v2.0.0: keep the two games and their instructions distinct. */
+[id] { scroll-margin-top: 24px; }
+.brand { white-space: nowrap; }
+.rename-note { margin-top: 24px; color: var(--muted); font-size: 14px; }
+.dual-game-stage {
+  min-height: 0;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: start;
+  gap: 24px 20px;
+  padding: 28px;
+}
+.hero h1 { font-size: clamp(38px, 4.2vw, 56px); }
+.mode-shot { min-width: 0; width: 100%; max-width: 220px; justify-self: center; }
+.mode-shot figcaption { margin-bottom: 14px; }
+.mode-shot strong { display: block; color: var(--navy); font-size: 23px; }
+.mode-shot span { display: block; color: var(--muted); font-size: 12px; }
+.mode-shot img {
+  display: block;
+  width: 100%;
+  border: 5px solid var(--surface);
+  border-radius: 24px;
+  box-shadow: var(--shadow-sm);
+}
+.dual-game-stage .hero-stage-label { margin: 0; max-width: 100%; justify-self: stretch; }
+.game-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+.game-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  padding: clamp(24px, 4vw, 40px);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+}
+.game-card-trail { background: var(--sky); }
+.game-card .eyebrow { margin: 0; }
+.game-card-trail .eyebrow { color: var(--accent-dark); }
+.game-card h3 { font-size: clamp(28px, 3vw, 38px); }
+.game-card h3 span { display: block; color: var(--muted); font: 400 13px/1.6 var(--body-font); }
+.game-card p, .game-card ul { margin: 0; }
+.game-card ul { padding-left: 1.3em; }
+.game-tagline { font-weight: 600; color: var(--navy); font-size: 20px; }
+.game-card .button { margin-top: auto; }
+.guide-jump { display: flex; flex-wrap: wrap; align-items: center; gap: 14px; margin-bottom: 32px; }
+.trail-guide { margin-top: 64px; }
+.calibration-steps { padding-left: 1.4em; }
+.calibration-steps li + li { margin-top: 20px; }
+.calibration-steps strong, .calibration-steps span { display: block; }
+.calibration-steps span { margin-top: 6px; color: var(--muted); }
+.guide-trail-shot { max-width: 250px; }
+.guide-trail-shot img { display: block; border-radius: 22px; }
+.guide-trail-shot figcaption { margin-top: 16px; color: var(--muted); font-size: 14px; }
+#play-records p { margin-top: 18px; }
+.priority-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 
 @container (max-width: 920px) {
   .hero { grid-template-columns: 1fr; }
@@ -858,16 +924,17 @@ details[open] summary::after { content: "−"; }
   .play-layout { grid-template-columns: 1fr; }
   .samoyed-frame { max-width: 700px; }
   .scene { grid-template-columns: 1fr; }
+  .site-footer { padding-block: 28px; grid-template-columns: 1fr auto; }
+  .footer-nav { grid-column: 1 / -1; grid-row: 2; justify-content: flex-start; flex-wrap: wrap; }
 }
 
 @media (max-width: 760px) {
   :root { --page: min(100% - 36px, 680px); }
   body { font-size: 15px; }
-  .site-header { min-height: 64px; gap: 12px; }
-  .brand { gap: 0; }
-  .brand-name { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
-  .brand img { width: 36px; height: 36px; border-radius: 11px; }
-  .site-nav { flex: 1; gap: 8px; }
+  .site-header { min-height: 64px; gap: 4px; flex-wrap: wrap; padding-block: 12px; }
+  .brand-logo { width: 204px; }
+  .brand-icon { width: 44px; height: 44px; border-radius: 13px; }
+  .site-nav { flex: 1 1 100%; gap: 8px; }
   .site-nav a { flex: 1 1 auto; justify-content: center; font-size: 12px; white-space: nowrap; }
   .hero { padding-block: 42px 68px; gap: 38px; }
   .hero-stage { min-height: 520px; grid-template-columns: minmax(180px, 0.95fr) minmax(132px, 0.7fr); padding: 20px; gap: 14px; }
@@ -879,6 +946,7 @@ details[open] summary::after { content: "−"; }
   .step-grid,
   .priority-grid,
   .privacy-summary { grid-template-columns: 1fr; }
+  .game-grid { grid-template-columns: 1fr; }
   .fact-card { min-height: 126px; }
   .play-layout { grid-template-columns: 1fr; }
   .closing-panel { align-items: flex-start; flex-direction: column; }
@@ -915,6 +983,13 @@ details[open] summary::after { content: "−"; }
   .support-accordions .details-body { padding-inline: 16px; }
   .contact-actions { align-items: stretch; flex-direction: column; }
   .contact-actions .button { width: 100%; }
+  .dual-game-stage { min-height: 0; grid-template-columns: repeat(2, minmax(0, 1fr)); padding: 14px; gap: 18px 12px; }
+  .mode-shot strong { font-size: 20px; }
+  .mode-shot span { font-size: 11px; }
+  .mode-shot img { border-width: 3px; border-radius: 16px; }
+  .guide-jump .button { flex: 1 1 40%; padding-inline: 12px; }
+  .game-card .button { width: 100%; }
+  .site-footer { grid-template-columns: 1fr; gap: 16px; }
 }
 
 @media (prefers-reduced-motion: reduce) {

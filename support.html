@@ -3,16 +3,17 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="DogDropの全身認識、ステップ・スクワット、カメラ許可などのトラブル解決方法。" />
-    <title>サポート | DogDrop</title>
-    <link rel="icon" href="assets/app-icon.png" />
-    <link rel="stylesheet" href="assets/site.css?v=20260909-materials" />
+    <meta name="description" content="わんムーブのサポート。DogDropの操作、DogTrailのスクワット調整・路上率、全身認識、カメラ許可、プレイ記録、音楽・素材の情報を確認できます。" />
+    <title>サポート | わんムーブ</title>
+    <link rel="icon" href="assets/wanmove-icon.png" />
+    <link rel="stylesheet" href="assets/site.css?v=20260912-wanmove-brand-icon" />
   </head>
   <body class="site-shell">
     <a class="skip-link" href="#main-content">本文へ移動</a>
     <header class="site-header" data-od-id="site-header">
-      <a class="brand" href="index.html" aria-label="DogDrop ホーム" data-od-id="header-brand">
-        <img src="assets/app-icon.png" alt="" /><span class="brand-name">DogDrop</span>
+      <a class="brand" href="index.html" aria-label="わんムーブ ホーム" data-od-id="header-brand">
+        <img class="brand-icon" src="assets/wanmove-icon.png" width="1024" height="1024" alt="" />
+        <img class="brand-logo" src="assets/wanmove-logo.png" width="2172" height="724" alt="わんムーブ" />
       </a>
       <nav class="site-nav" aria-label="主要メニュー" data-od-id="primary-navigation">
         <a href="guide.html">遊び方</a>
@@ -25,8 +26,8 @@
       <header class="page-hero" data-od-id="support-hero">
         <p class="eyebrow">SUPPORT</p>
         <h1 data-od-id="support-heading">困ったときは</h1>
-        <p class="updated">最終更新日：2026年9月9日</p>
-        <p class="lead">まず、よくある3つの症状から確認してください。詳しい手順は開いて読めます。</p>
+        <p class="updated">v2.0.0対応 · 最終更新日：2026年9月12日</p>
+        <p class="lead">困っていることを選んでください。DogDropとDogTrailの操作、カメラ、記録を順に確認できます。</p>
       </header>
 
       <div class="article-wrap">
@@ -38,8 +39,12 @@
               <span>距離・明るさ・映る人数を確認</span>
             </a>
             <a class="priority-card" href="#motion-detection" data-od-id="priority-card-motion">
-              <strong>ステップ・スクワットが反応しない</strong>
+              <strong>DogDropが反応しない</strong>
               <span>足元・中央姿勢・動き方を確認</span>
+            </a>
+            <a class="priority-card" href="#dogtrail-calibration" data-od-id="priority-card-dogtrail">
+              <strong>DogTrailの調整・操作で困った</strong>
+              <span>しゃがむ範囲・犬の高さを確認</span>
             </a>
             <a class="priority-card" href="#camera-permission" data-od-id="priority-card-camera">
               <strong>カメラを許可できない</strong>
@@ -50,12 +55,12 @@
 
         <p class="info-box" data-od-id="support-guide-link">
           <strong>ゲーム内容や基本操作を知りたい方へ</strong>
-          <a class="text-link" href="guide.html">遊び方を3つの場面で見る</a>
+          <a class="text-link" href="guide.html">ゲーム別の遊び方を見る</a>
         </p>
 
         <section id="getting-started" class="support-group" aria-labelledby="getting-started-title" data-od-id="support-getting-started">
           <h2 id="getting-started-title">認識しやすい準備</h2>
-          <p>最初はLevel 1と1分プレイがおすすめです。次の順番で環境を整えます。</p>
+          <p>どちらのゲームも最初はLevel 1から。DogDropは1分、DogTrailは約1分のコースで、次の順番に環境を整えます。</p>
           <div class="support-accordions">
             <details data-od-id="support-detail-basic-preparation">
               <summary>基本の準備を確認する</summary>
@@ -64,11 +69,11 @@
                   <li>左右へ一歩動き、無理なくしゃがめる広さを確保します。</li>
                   <li>画面を自分へ向け、端末を腰くらいの高さの倒れにくい場所へ置きます。</li>
                   <li>周囲の物・コード・段差、床の滑りやすさ、体調を確認します。</li>
-                  <li>姿勢調整へ進んだら約1.5m離れ、頭から足元までカメラに入れます。</li>
+                  <li>姿勢調整・スクワット調整へ進んだら約1.5m離れ、頭から足元までカメラに入れます。</li>
                   <li>カメラに入るのはプレイヤー1人だけにします。</li>
                   <li>室内を明るくし、強い逆光を避けます。</li>
                 </ol>
-                <p class="resolved"><strong>準備できた状態</strong>正面を向いた全身が人型の枠に入り、数秒安定して立てます。</p>
+                <p class="resolved"><strong>準備できた状態</strong>正面を向いた全身がカメラに映り、数秒安定して立てます。DogDropは人型の枠、DogTrailは撮影枠と動きの案内を確認します。</p>
               </div>
             </details>
           </div>
@@ -92,10 +97,10 @@
                 <ol>
                   <li>iPhone／iPadの「設定」を開きます。</li>
                   <li>「プライバシーとセキュリティ」→「カメラ」を開きます。</li>
-                  <li>一覧にある「DogDrop」をオンにします。「設定」→「アプリ」→「DogDrop」から変更できる場合もあります。</li>
-                  <li>DogDropをいったん終了し、もう一度起動します。</li>
+                  <li>一覧にある「わんムーブ」をオンにします。旧バージョンでは「DogDrop」と表示されます。</li>
+                  <li>わんムーブをいったん終了し、もう一度起動します。</li>
                 </ol>
-                <p class="resolved"><strong>正常な状態</strong>Levelと時間を選んだ後に、端末を置く準備画面へ進めます。</p>
+                <p class="resolved"><strong>正常な状態</strong>準備画面の後、カメラ映像が表示され、姿勢調整またはスクワット調整を行えます。</p>
               </div>
             </details>
             <details data-od-id="support-detail-camera-blank">
@@ -106,14 +111,14 @@
                   <p><strong>主な原因</strong>権限が反映されていない、カメラの開始に失敗した、全身が認識範囲に入っていない。</p>
                 </div>
                 <ol>
-                  <li>DogDropのカメラ許可がオンになっていることを確認します。</li>
+                  <li>わんムーブのカメラ許可がオンになっていることを確認します。</li>
                   <li>カメラを使用しているほかのアプリを終了します。</li>
-                  <li>DogDropを終了して再起動します。</li>
+                  <li>わんムーブを終了して再起動します。</li>
                   <li>改善しない場合はiPhone／iPadを再起動します。</li>
                   <li>前面カメラを覆っているケースや物がないか確認します。</li>
                 </ol>
-                <p class="resolved"><strong>正常な状態</strong>人型の枠や関節の点・線が表示され、全身を認識すると操作練習へ進みます。</p>
-                <p class="small">カメラ映像を表示するのは姿勢調整中だけです。カメラ映像と身体の骨格座標は保存・送信しません。</p>
+                <p class="resolved"><strong>正常な状態</strong>DogDropは全身を認識すると次の案内へ進みます。DogTrailは立つ・しゃがむ・立つの調整が進みます。</p>
+                <p class="small">カメラ映像を表示するのは姿勢調整・スクワット調整中だけです。カメラ映像と身体の骨格座標は保存・送信しません。</p>
               </div>
             </details>
           </div>
@@ -135,7 +140,7 @@
                   <li>プレイヤー以外の人がカメラに入らないようにします。</li>
                   <li>特に両膝と足元が隠れていないことを確認します。</li>
                   <li>照明をつけ、全身が明るく映る環境にします。</li>
-                  <li>正面を向き、腕を自然に下ろして数秒静止します。</li>
+                  <li>正面を向いて数秒静止します。DogTrailの調整では、画面の案内に合わせて腕を胸の前で組みます。</li>
                   <li>窓や強い照明を背にしないよう、端末または身体の向きを変えます。</li>
                 </ol>
                 <p class="resolved"><strong>正常な状態</strong>姿勢調整が完了し、認識が戻ると操作練習またはゲームが再開します。</p>
@@ -145,7 +150,7 @@
         </section>
 
         <section id="motion-detection" class="support-group" aria-labelledby="motion-title" data-od-id="support-motion-detection">
-          <h2 id="motion-title">ステップ・スクワットが反応しない</h2>
+          <h2 id="motion-title">DogDrop：ステップ・スクワットが反応しない</h2>
           <p>動作後に中央姿勢へ戻ることと、膝・足元が映っていることが大切です。</p>
           <div class="support-accordions">
             <details data-od-id="support-detail-side-step">
@@ -193,7 +198,50 @@
                   <li>端末が揺れない場所へ置き直します。</li>
                   <li>ほかの人や動く物がカメラへ入らないようにします。</li>
                 </ol>
-                <p class="resolved"><strong>正常な状態</strong>一回の動作に対して一回だけ入力され、中央姿勢では犬が動きません。</p>
+                <p class="resolved"><strong>正常な状態</strong>横への一歩に対して1レーン移動します。中央姿勢では意図しない横移動やスクワット入力が入りません（通常の落下は続きます）。</p>
+              </div>
+            </details>
+          </div>
+        </section>
+
+        <section id="dogtrail-calibration" class="support-group" aria-labelledby="dogtrail-support-title">
+          <h2 id="dogtrail-support-title">DogTrail：スクワット調整・犬の高さ</h2>
+          <p>DogDropの「素早く降下」と異なり、DogTrailではしゃがむ深さに合わせて犬の高さが連続して変わります。</p>
+          <div class="support-accordions">
+            <details data-od-id="support-detail-trail-calibration">
+              <summary>スクワット調整が進まない</summary>
+              <div class="details-body">
+                <div class="trouble-meta"><p><strong>症状</strong>「自然に立とう」「ゆっくりしゃがもう」などの案内から進まない。</p><p><strong>主な原因</strong>腰が画面外・隠れている、動き続けている、端末を動かして基準が変わった。</p></div>
+                <ol>
+                  <li>明るい場所で正面を向き、頭から足元、左右の腰が映る位置に立ちます。</li>
+                  <li>腕を胸の前で組み、自然な立位で案内が進むまで静止します。</li>
+                  <li>ゆっくり浅くしゃがみ、「そのまま」が出たら楽に保てる高さで静止します。</li>
+                  <li>最後にゆっくり立ち上がり、自然な立位で待ちます。</li>
+                  <li>端末の位置を変えた場合や、調整が合わない場合は「コース選択へ戻る」からやり直します。</li>
+                </ol>
+                <p class="resolved"><strong>正常な状態</strong>3つの案内が順に進み、立位に戻ると準備が完了します。</p>
+                <p>見本と同じ深さに合わせたり、反応させるために無理に深くしゃがんだりする必要はありません。</p>
+              </div>
+            </details>
+            <details data-od-id="support-detail-trail-height">
+              <summary>犬の高さが合わない／路上率が低い</summary>
+              <div class="details-body">
+                <ol>
+                  <li>しゃがむと犬が下へ、立ち上がると上へ動くことを確認します。</li>
+                  <li>犬の足先ではなく、胴体の丸い判定点を道の中へ合わせます。</li>
+                  <li>右側に見える道を見て、ゆっくり動き始めます。まずはLevel 1で試してください。</li>
+                  <li>立っても犬が上へ戻らないなど、調整が合わない場合はコース選択へ戻り、スクワット調整をやり直します。</li>
+                </ol>
+                <p class="resolved"><strong>正常な状態</strong>調整した無理のない範囲の中で犬を上下に動かせます。</p>
+                <p>路上率は上下動の区間で道に乗っていた時間の割合です。立位休憩や追跡停止は採点対象外。銅60％・銀75％・金90％以上が目安です。</p>
+              </div>
+            </details>
+            <details data-od-id="support-detail-trail-levels">
+              <summary>コースや難易度はどう違う？</summary>
+              <div class="details-body">
+                <p>Level 1〜3にそれぞれ6パターンがあります。Levelが上がると道幅が狭くなり、上下動のペースにも変化が加わります。1コースの上下動は6回です。</p>
+                <p>Level 3には調整した範囲の下端まで使う動きが1回あります。調整した範囲を超えて深くしゃがむ必要はありません。負担を感じたら中止し、次回は無理のない範囲とLevelを選んでください。</p>
+                <a class="text-link" href="guide.html#dogtrail">DogTrailの遊び方へ</a>
               </div>
             </details>
           </div>
@@ -213,8 +261,9 @@
                 <ol>
                   <li>一時停止メニューが表示されている場合は「再開」を選びます。</li>
                   <li>認識の案内が表示されている場合は、全身を入れて中央姿勢で数秒静止します。</li>
-                  <li>復帰しない場合はタイトルへ戻り、Levelと時間を選び直します。</li>
-                  <li>同じ状態が続く場合はDogDropを終了して再起動します。</li>
+                  <li>DogTrailでは認識が安定した後のカウントダウンを待ちます。停止中は道・コース時間・採点も止まります。</li>
+                  <li>復帰しない場合はタイトルへ戻り、ゲームとLevel・コースを選び直します。</li>
+                  <li>同じ状態が続く場合はわんムーブを終了して再起動します。</li>
                 </ol>
                 <p class="resolved"><strong>正常な状態</strong>案内が消え、タイマーと犬の操作が再開します。</p>
               </div>
@@ -223,23 +272,23 @@
               <summary>音が出ない</summary>
               <div class="details-body">
                 <div class="trouble-meta">
-                  <p><strong>症状</strong>犬がそろったときなどの効果音が聞こえない。</p>
+                  <p><strong>症状</strong>BGM、犬の鳴き声、ゴール時の効果音が聞こえない。</p>
                   <p><strong>主な原因</strong>メディア音量が小さい、Bluetooth機器へ出力されている、音声処理が一時的に停止している。</p>
                 </div>
                 <ol>
                   <li>端末の音量ボタンでメディア音量を上げます。</li>
                   <li>イヤホンやスピーカーなど、Bluetoothの接続先を確認します。</li>
-                  <li>DogDropを終了して再起動します。</li>
+                  <li>わんムーブを終了して再起動します。</li>
                   <li>ほかのアプリで端末から音が出るか確認します。</li>
                 </ol>
-                <p class="resolved"><strong>正常な状態</strong>犬がそろったときなどに効果音が再生されます。</p>
+                <p class="resolved"><strong>正常な状態</strong>ゲームごとのBGM、DogDropで犬をそろえたときの鳴き声、完走時の効果音が再生されます。ボタン操作の効果音はありません。</p>
               </div>
             </details>
             <details data-od-id="support-detail-compatibility">
               <summary>端末またはOSが対応しているか分からない</summary>
               <div class="details-body">
                 <ol>
-                  <li>App StoreのDogDropページで「互換性」を確認します。</li>
+                  <li>App Storeのわんムーブ（旧DogDrop）ページで「互換性」を確認します。</li>
                   <li>「設定」→「一般」→「情報」で、機種名とOSバージョンを確認します。</li>
                   <li>利用可能なOSアップデートがある場合は、内容を確認して更新を検討します。</li>
                 </ol>
@@ -251,21 +300,22 @@
 
         <section id="records" class="support-group" aria-labelledby="records-title" data-od-id="support-records">
           <h2 id="records-title">記録を確認したい</h2>
-          <p>完了したプレイのスコアや運動回数などは、端末内のゲーム履歴へ保存されます。</p>
+          <p>タイトルの「プレイ記録」から、DogDrop・DogTrailの回数と時間を日・週・月・年ごとに確認できます。記録は端末内に保存されます。</p>
           <div class="support-accordions">
             <details data-od-id="support-detail-records-missing">
               <summary>プレイ履歴や記録が見つからない</summary>
               <div class="details-body">
                 <div class="trouble-meta">
                   <p><strong>症状</strong>完了したプレイの記録が表示されない。</p>
-                  <p><strong>主な原因</strong>タイマー終了前にプレイを終えた、または別のLevel・プレイ時間の記録を見ている。</p>
+                  <p><strong>主な原因</strong>途中でプレイを終えた、別の期間・ゲームを見ている、保存されていない過去の記録を探している。</p>
                 </div>
                 <ol>
-                  <li>Levelとプレイ時間を選び、タイマー終了までプレイします。</li>
-                  <li>結果画面で本日・今週のまとめやベストスコアを確認します。</li>
-                  <li>Levelやプレイ時間の条件が一致しているか見直します。</li>
+                  <li>DogDropは操作を行ってタイマー終了まで、DogTrailはゴールまでプレイし、結果画面を確認します。</li>
+                  <li>タイトルの「プレイ記録」で、日・週・月・年と対象期間を確認します。</li>
+                  <li>ゲーム別の内訳を確認します。ベスト成績はLevelなどの条件別に記録されます。</li>
                 </ol>
                 <p class="resolved"><strong>正常な状態</strong>完了したプレイが端末内の集計へ反映されます。</p>
+                <p>準備・追跡停止・復帰待機はプレイ時間に含みません。DogTrailの記録時間はコース中の立位休憩を含みますが、開始待ちとゴール演出を除くため、「約1分」という案内より短くなります。過去の記録が保存されていない期間は再現できません。</p>
               </div>
             </details>
             <details data-od-id="support-detail-records-reinstall">
@@ -306,13 +356,14 @@
         <section id="known-issues" class="support-group" aria-labelledby="known-issues-title" data-od-id="support-known-issues">
           <h2 id="known-issues-title">既知の問題・更新情報</h2>
           <div class="safety-box">
-            <strong>現在掲載中の既知の問題はありません。</strong>
-            <p>確認済みの問題と回避方法がある場合は、この欄でお知らせします。</p>
+            <strong>認識の状態は、端末や撮影環境によって変わります。</strong>
+            <p>問題が続く場合は、上の対処方法を確認し、ページ末尾の窓口へお知らせください。</p>
           </div>
           <details data-od-id="support-detail-updates">
             <summary>最近の更新内容を見る</summary>
             <div class="details-body">
               <ul>
+                <li>2026年9月12日：v2.0.0向けに「わんムーブ」へ表記を統一し、DogTrailの遊び方・スクワット調整・メダル、プレイ記録の説明を追加しました。</li>
                 <li>2026年9月9日：「音楽・素材について」に音楽・背景素材・効果音の情報をまとめました。</li>
                 <li>2026年9月8日：わんムーブの音楽クレジットを追加しました。</li>
                 <li>2026年8月18日：端末設置、安全確認、姿勢調整、データ取扱いの説明を更新しました。</li>
@@ -407,8 +458,9 @@
           <ul class="contact-list">
             <li>iPhone／iPadの機種名</li>
             <li>iOS／iPadOSのバージョン</li>
-            <li>DogDropのVersionとBuild Number</li>
-            <li>Levelとプレイ時間</li>
+            <li>わんムーブのVersionとBuild Number（分かる範囲で）</li>
+            <li>ゲーム名（DogDrop／DogTrail）</li>
+            <li>Levelとプレイ時間、またはコース名・パターン</li>
             <li>問題が起きたおおよその日時</li>
             <li>画面に表示されたメッセージ</li>
             <li>問題が起きるまでの操作と再現状況</li>
@@ -420,7 +472,7 @@
           <div class="contact-actions">
             <a
               class="button button-primary"
-              href="mailto:dogdrop.support@gmail.com?subject=DogDrop%20%E3%82%B5%E3%83%9D%E3%83%BC%E3%83%88&body=%E7%AB%AF%E6%9C%AB%3A%0AOS%3A%0AVersion%20%2F%20Build%3A%0ALevel%20%2F%20%E3%83%97%E3%83%AC%E3%82%A4%E6%99%82%E9%96%93%3A%0A%E7%99%BA%E7%94%9F%E6%97%A5%E6%99%82%3A%0A%E8%A1%A8%E7%A4%BA%E3%83%A1%E3%83%83%E3%82%BB%E3%83%BC%E3%82%B8%3A%0A%E6%93%8D%E4%BD%9C%E3%83%BB%E5%86%8D%E7%8F%BE%E6%89%8B%E9%A0%86%3A%0A"
+              href="mailto:dogdrop.support@gmail.com?subject=%E3%82%8F%E3%82%93%E3%83%A0%E3%83%BC%E3%83%96%20%E3%82%B5%E3%83%9D%E3%83%BC%E3%83%88&body=%E7%AB%AF%E6%9C%AB%3A%0AOS%3A%0AVersion%20%2F%20Build%3A%0A%E3%82%B2%E3%83%BC%E3%83%A0%3A%0ALevel%20%2F%20%E3%82%B3%E3%83%BC%E3%82%B9%3A%0A%E7%99%BA%E7%94%9F%E6%97%A5%E6%99%82%3A%0A%E8%A1%A8%E7%A4%BA%E3%83%A1%E3%83%83%E3%82%BB%E3%83%BC%E3%82%B8%3A%0A%E6%93%8D%E4%BD%9C%E3%83%BB%E5%86%8D%E7%8F%BE%E6%89%8B%E9%A0%86%3A%0A"
               data-od-id="support-email-cta"
             >メールで問い合わせる</a>
             <span>dogdrop.support@gmail.com</span>
@@ -430,11 +482,11 @@
     </main>
 
     <footer class="site-footer" data-od-id="site-footer">
-      <a class="brand" href="index.html" aria-label="DogDrop ホーム"><img src="assets/app-icon.png" alt="" /><span class="brand-name">DogDrop</span></a>
+      <a class="brand" href="index.html" aria-label="わんムーブ ホーム"><img class="brand-icon" src="assets/wanmove-icon.png" width="1024" height="1024" alt="" /><img class="brand-logo" src="assets/wanmove-logo.png" width="2172" height="724" alt="わんムーブ" /></a>
       <nav class="footer-nav" aria-label="フッターメニュー">
         <a href="guide.html">遊び方</a><a href="support.html">サポート</a><a href="#music-credits">音楽・素材について</a><a href="privacy.html">プライバシー</a>
       </nav>
-      <span>© 2026 DogDrop</span>
+      <span>© 2026 わんムーブ</span>
     </footer>
   </body>
 </html>
