@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="わんムーブは、犬と遊びながら体を動かすiPhone・iPad向け運動ゲーム。ステップで犬をそろえるDogDropと、スクワットで道を進むDogTrailを楽しめます。" />
-    <title>わんムーブ | 犬と遊ぶ、2つの運動ゲーム</title>
+    <meta name="description" content="わんムーブは、犬と遊びながら体を動かすiPhone・iPad向け運動ゲーム。DogDrop、DogTrail、ジャンケンや計算にステップで答えるコグニドロップを楽しめます。" />
+    <title>わんムーブ | 犬と遊ぶ、3つの運動ゲーム</title>
     <link rel="icon" href="assets/wanmove-icon.png" />
-    <link rel="stylesheet" href="assets/site.css?v=20260912-wanmove-brand-icon" />
+    <link rel="stylesheet" href="assets/site.css?v=20260921-v2-1" />
   </head>
   <body class="site-shell">
     <a class="skip-link" href="#main-content">本文へ移動</a>
@@ -25,21 +25,21 @@
     <main id="main-content">
       <section class="hero" aria-labelledby="hero-title" data-od-id="home-hero">
         <div class="hero-copy">
-          <p class="eyebrow">VERSION 2.0.0</p>
+          <p class="eyebrow">VERSION 2.1.0</p>
           <h1 id="hero-title" data-od-id="hero-heading">犬と遊ぶ。<br />体を動かす。</h1>
           <p class="lead">
-            横へ一歩、ゆっくりスクワット。あなたの動きで犬が動く、iPhone・iPadの運動ゲームです。今日は、どちらの犬と遊びますか？
+            横へ一歩、ゆっくりスクワット。あなたの動きで犬が動く、iPhone・iPadの運動ゲームです。ジャンケンや計算に答えるゲームも加わりました。
           </p>
           <div class="hero-actions">
-            <a class="button button-primary" href="#games" data-od-id="hero-primary-cta">2つのゲームを見る</a>
+            <a class="button button-primary" href="#games" data-od-id="hero-primary-cta">3つのゲームを見る</a>
             <a class="text-link" href="guide.html" data-od-id="hero-guide-link">はじめての方へ</a>
           </div>
-          <p class="rename-note">DogDropは「わんムーブ」へ。これまでのDogDropに、新しいゲームDogTrailが加わりました。</p>
+          <p class="rename-note">DogDropは「わんムーブ」へ。DogDrop、DogTrail、コグニドロップの3つから、その日の気分で選べます。</p>
           <p class="privacy-note">カメラ映像や身体の骨格座標は、端末上で処理し、保存・送信しません。</p>
           <p class="small">一般向けの運動ゲームです。医療・リハビリテーションを目的としたアプリではありません。</p>
         </div>
 
-        <div class="hero-stage dual-game-stage" aria-label="DogDropとDogTrailの実際のプレイ画面" data-od-id="hero-gameplay-stage">
+        <div class="hero-stage three-game-stage" aria-label="DogDrop、DogTrail、コグニドロップの実際のプレイ画面" data-od-id="hero-gameplay-stage">
           <figure class="mode-shot" data-od-id="hero-gameplay-image">
             <figcaption><strong>DogDrop</strong><span>ステップで、犬をそろえる</span></figcaption>
             <img src="assets/v2-dogdrop.png" width="1170" height="2532" alt="DogDropのプレイ画面。落ちてくる犬を同じ犬種のレーンへ動かします" />
@@ -47,6 +47,10 @@
           <figure class="mode-shot" data-od-id="hero-dogtrail-image">
             <figcaption><strong>DogTrail</strong><span>スクワットで、道を進む</span></figcaption>
             <img src="assets/v2-dogtrail.png" width="1170" height="2532" alt="DogTrailのプレイ画面。横向きのサモエドが、緑の公園の波打つ道に沿ってゴールへ進みます" />
+          </figure>
+          <figure class="mode-shot" data-od-id="hero-cognidrop-image">
+            <figcaption><strong>コグニドロップ</strong><span>ステップで、問題に答える</span></figcaption>
+            <img src="assets/v2-1-cognidrop.png" width="1170" height="2532" alt="コグニドロップのプレイ画面。ジャンケンの問題に対し、左右の答えのレーンをステップで選びます" />
           </figure>
           <p class="hero-stage-label">指で操作する代わりに、体の動きを前面カメラで読み取ります。</p>
         </div>
@@ -60,7 +64,7 @@
         <div class="fact-grid">
           <article class="fact-card" data-od-id="fact-card-duration">
             <span>プレイ時間</span>
-            <strong>1分から</strong>
+            <strong>1回 約1分</strong>
           </article>
           <article class="fact-card" data-od-id="fact-card-player">
             <span>カメラに入る人</span>
@@ -76,16 +80,16 @@
       <section id="games" class="section" aria-labelledby="games-title">
         <div class="section-heading">
           <p class="eyebrow">CHOOSE YOUR GAME</p>
-          <h2 id="games-title">今日は、どっちで遊ぶ？</h2>
-          <p>どちらも3つのレベルから。まずはLevel 1で、自分のペースを見つけましょう。</p>
+          <h2 id="games-title">今日は、どれで遊ぶ？</h2>
+          <p>3つのゲーム、3つのレベルから。まずはLevel 1で、自分のペースを見つけましょう。</p>
         </div>
         <div class="game-grid">
           <article class="game-card">
-            <p class="eyebrow">ステップ ＋ スクワット · 1〜5分</p>
+            <p class="eyebrow">ステップ ＋ スクワット · 1分</p>
             <h3>DogDrop <span>ドッグドロップ</span></h3>
             <p class="game-tagline">犬をそろえて、スコアを伸ばそう。</p>
             <p>横へ一歩で犬を1レーン移動。無理のない深さでしゃがむと、犬が素早く降下します。下にいる同じ犬種へ届けましょう。</p>
-            <ul><li>Levelとプレイ時間を選べる</li><li>スコアやステップ・スクワット回数を振り返る</li></ul>
+            <ul><li>Level 1〜3から選べる（1プレイ1分）</li><li>スコアやステップ・スクワット回数を振り返る</li></ul>
             <a class="button button-secondary" href="guide.html#dogdrop">DogDropの遊び方</a>
           </article>
           <article class="game-card game-card-trail">
@@ -95,6 +99,14 @@
             <p>しゃがむと犬が下へ、立ち上がると上へ。先の道を見ながら、犬の判定点を道の中に合わせます。自分の無理のない範囲で遊べます。</p>
             <ul><li>3レベル × 各6パターンのコース</li><li>路上率と銅・銀・金メダルに挑戦</li></ul>
             <a class="button button-secondary" href="guide.html#dogtrail">DogTrailの遊び方</a>
+          </article>
+          <article class="game-card game-card-cogni">
+            <p class="eyebrow">左右ステップ · 1分</p>
+            <h3>コグニドロップ <span>CogniDrop</span></h3>
+            <p class="game-tagline">ジャンケン・計算に、体で答えよう。</p>
+            <p>画面の問題を見て、正しい答えがある左右のレーンへ一歩。落ちてくる犬をステップで動かして答えます。</p>
+            <ul><li>ジャンケン3ルール、計算3種類から選べる</li><li>得点と正解・誤答・未回答、平均回答タイムを振り返る</li></ul>
+            <a class="button button-secondary" href="guide.html#cognidrop">コグニドロップの遊び方</a>
           </article>
         </div>
       </section>
@@ -109,7 +121,7 @@
           <li class="step-card" data-od-id="start-step-select">
             <span class="step-number">1</span>
             <h3>ゲームを選ぶ</h3>
-            <p>「ゲームをえらぶ」からDogDropかDogTrailへ。DogDropはLevelと時間、DogTrailはコースを選びます。</p>
+            <p>「ゲームをえらぶ」から3つのゲームを選択。コグニドロップでは、ジャンケンまたは計算とルール、Levelを選びます。</p>
           </li>
           <li class="step-card" data-od-id="start-step-safety">
             <span class="step-number">2</span>
@@ -119,7 +131,7 @@
           <li class="step-card" data-od-id="start-step-posture">
             <span class="step-number">3</span>
             <h3>姿勢を整えて遊ぶ</h3>
-            <p>約1.5m離れ、全身をカメラへ。DogDropは姿勢調整、DogTrailは無理なくしゃがめる範囲の調整を行います。</p>
+            <p>約1.5m離れ、全身をカメラへ。DogDropとコグニドロップは姿勢調整、DogTrailは無理なくしゃがめる範囲の調整を行います。</p>
           </li>
         </ol>
       </section>
@@ -138,7 +150,7 @@
             <div class="mechanic-grid">
               <article class="mechanic-card" data-od-id="mechanic-card-fall">
                 <strong>短い時間から</strong>
-                <p>DogDropは1〜5分、DogTrailは約1分。準備時間は別です。</p>
+                <p>DogDropとコグニドロップは1分、DogTrailは約1分。準備・練習の時間は別です。</p>
               </article>
               <article class="mechanic-card" data-od-id="mechanic-card-step">
                 <strong>無理のない動きで</strong>
@@ -146,7 +158,7 @@
               </article>
               <article class="mechanic-card" data-od-id="mechanic-card-squat">
                 <strong>プレイ記録を振り返る</strong>
-                <p>日・週・月・年ごとに、2つのゲームの回数や時間を確認できます。</p>
+                <p>日・週・月・年ごとに、3つのゲームの回数や時間を確認できます。</p>
               </article>
               <article class="mechanic-card" data-od-id="mechanic-card-match">
                 <strong>記録は端末の中に</strong>
