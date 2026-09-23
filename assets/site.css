@@ -111,6 +111,18 @@ summary:focus-visible {
   object-fit: contain;
 }
 
+.brand-wordmark {
+  color: var(--navy);
+  font: 800 clamp(26px, 3vw, 34px)/1.2 var(--display-font);
+  letter-spacing: -0.04em;
+}
+
+.site-nav .language-link {
+  gap: 4px;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
 .site-nav {
   display: flex;
   align-items: center;
