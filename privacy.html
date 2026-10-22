@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="わんムーブ（ドッグドロップ・ドッグトレイル・コグニドロップ）のカメラ、身体動作、端末内のプレイ記録、任意の利用状況データの取扱い。" />
+    <meta name="description" content="わんムーブ（ドッグドロップ・ドッグトレイル・コグニドロップ）のカメラ、身体・手の動作、端末内のプレイ記録、任意の利用状況データの取扱い。" />
     <title>プライバシー | わんムーブ</title>
     <link rel="icon" href="assets/wanmove-icon.png" />
     <link rel="stylesheet" href="assets/site.css?v=20260923-languages" />
@@ -29,16 +29,16 @@
       <header class="page-hero" data-od-id="privacy-hero">
         <p class="eyebrow">PRIVACY POLICY</p>
         <h1 data-od-id="privacy-heading">プライバシー</h1>
-        <p class="updated">最終更新日：2026年10月12日</p>
+        <p class="updated">最終更新日：2026年10月23日</p>
         <p class="lead">わんムーブ（旧アプリ名：DogDrop）で扱う情報を、3つの要点でお知らせします。アプリ内のドッグドロップ・ドッグトレイル・コグニドロップに適用されます。</p>
-        <p class="rename-note"><strong>現在配信中のv2.3.0と、旧版v2.2.0の取扱いを区別して説明します。</strong>「プライバシー設定」で停止・削除依頼できるのはUnity Analyticsのデータです。旧版の診断データは別の仕組みで扱われます。</p>
+        <p class="rename-note"><strong>現在配信中のv2.3.0、v2.4.0で追加する肉球リモコン、旧版v2.2.0の取扱いを区別して説明します。</strong>「プライバシー設定」で停止・削除依頼できるのはUnity Analyticsのデータです。旧版の診断データは別の仕組みで扱われます。</p>
       </header>
 
       <div class="article-wrap">
         <section class="privacy-summary" aria-label="プライバシーの3つの要点" data-od-id="privacy-summary">
           <article class="summary-card" data-od-id="privacy-summary-camera">
             <strong>カメラは端末上で処理</strong>
-            <p>カメラ映像・身体の骨格座標は、保存・送信しません。</p>
+            <p>カメラ映像・身体や手指の関節座標は、保存・送信しません。</p>
           </article>
           <article class="summary-card" data-od-id="privacy-summary-history">
             <strong>ゲーム履歴は端末内</strong>
@@ -52,20 +52,22 @@
 
         <article class="policy-body" data-od-id="privacy-policy-body">
           <section class="policy-section" aria-labelledby="policy-camera-title" data-od-id="policy-camera">
-            <h2 id="policy-camera-title">1. カメラと身体動作の利用</h2>
+            <h2 id="policy-camera-title">1. カメラと身体・手の動作の利用</h2>
             <p>わんムーブ（以下「本アプリ」）は、ゲーム内の操作を検出するためにiPhoneまたはiPadの前面カメラを使用します。ドッグドロップ・コグニドロップの姿勢調整とドッグトレイルのスクワット調整中に、前面カメラの映像へ撮影枠や認識した関節の点・線を重ねて表示します。操作練習とゲーム中はカメラ映像を表示しません。</p>
-            <p>カメラ映像および身体の骨格座標は端末上でリアルタイムに処理し、保存または外部へ送信しません。</p>
+            <p>v2.4.0の肉球リモコンは、対応するメニュー画面で同じ前面カメラから手の位置と開閉を検出し、ボタンを選ぶために使用します。手指の情報は端末内の一時的な処理に限り、ゲーム履歴や利用状況データには含めません。一般配布版は肉球・身体操作の診断CSVを記録しません。</p>
+            <p>カメラ映像および身体・手指の関節座標は端末上でリアルタイムに処理し、保存または外部へ送信しません。</p>
             <p>ドッグトレイルでは、立った姿勢と無理なくしゃがんだ姿勢をもとに操作範囲を端末上で調整します。この調整のための身体座標をゲーム履歴に保存したり、外部へ送信したりすることはありません。</p>
           </section>
 
           <section class="policy-section" aria-labelledby="policy-voice-title">
             <h2 id="policy-voice-title">音声ガイドの再生</h2>
-            <p>v2.3.0の日本語・英語の音声ガイドは、開発時に生成しアプリへ同梱した音声ファイルを端末内で再生します。音声ガイドのためにマイク録音や外部AIサービスへの通信は行いません。ON/OFFと声・BGMの音量設定は端末内に保存します。これは、同意した場合のUnity Analytics送信がなくなるという意味ではありません。</p>
+            <p>v2.3.0以降の日本語・英語の音声ガイドは、開発時に生成しアプリへ同梱した音声ファイルを端末内で再生します。音声ガイドのためにマイク録音や外部AIサービスへの通信は行いません。ON/OFFと声・BGMの音量設定は端末内に保存します。v2.4.0の肉球リモコンの音声案内も同じ仕組みです。選択時のクリック音は音声ガイドと別にON/OFFを設定でき、この設定も端末内に保存します。これは、同意した場合のUnity Analytics送信がなくなるという意味ではありません。</p>
           </section>
 
           <section class="policy-section" aria-labelledby="policy-local-title" data-od-id="policy-local-storage">
             <h2 id="policy-local-title">2. 端末内に保存する情報</h2>
             <p>スコア、プレイ時間、運動回数、自己ベスト、日ごとのフィードバックなどのゲーム履歴は、機能提供のため端末内に保存します。ドッグトレイルでは路上率やメダル、コグニドロップでは得点、正解・誤答・未回答数、平均回答タイム、条件別の得点・タイムのベスト記録を端末内で扱います。アカウントやクラウドへ同期する機能はありません。</p>
+            <p>言語、音声ガイド・クリック音の設定、選択したゲームやレベル、遊び方の確認・練習完了の状態など、次回も同じ条件で使うための設定を端末内に保存します。肉球リモコンの紹介を確認したことや操作練習を完了したことは保存しますが、練習中のカメラ映像・手指の関節座標・手の動きの履歴は保存・送信しません。</p>
             <p>ドッグドロップ・ドッグトレイル・コグニドロップの回数とプレイ時間は日ごとにまとめ、過去の月・年を振り返れるよう端末内に保存期間を設けず保持します。サモエドのひとことは、その集計値に基づいて端末内で作成します。</p>
             <p>日本語表示で対応する端末では、Appleの端末内AIを使い、期間の種類、遊んだゲームの種類、前の週や月と比べた日数の増減などに合わせた短い文章を作成します。正確な日付・回数・時間や全履歴をAIへ渡さず、この機能のために外部AIへ記録を送信することはありません。英語表示の場合やAIを利用できない場合は、あらかじめ用意した文章を表示します。</p>
             <p>端末のAIが利用可能な場合は自動で文章を作成し、見出し横に「AI生成」と表示します。AIが作った文章はアプリ起動中の一時的な保持だけに使い、永続保存しません。生成用の入力や文章を分析データへ追加することはありません。</p>
@@ -88,7 +90,7 @@
 
           <section class="policy-section" aria-labelledby="policy-not-stored-title" data-od-id="policy-not-stored">
             <h2 id="policy-not-stored-title">4. 保存・送信しない情報</h2>
-            <p>本アプリは、氏名、連絡先、カメラ映像、身体の骨格座標、HealthKitの健康記録、診療情報を保存または送信しません。</p>
+            <p>本アプリは、氏名、連絡先、カメラ映像、身体・手指の関節座標、HealthKitの健康記録、診療情報を保存または送信しません。</p>
           </section>
 
           <section class="policy-section" aria-labelledby="policy-withdraw-title" data-od-id="policy-withdrawal">
