@@ -632,6 +632,131 @@ p { margin: 0; }
 
 .detail-group > h2 { font-size: clamp(26px, 3vw, 36px); }
 
+/* Paw Remote: pair real screen states with illustrative left-hand movements. */
+.paw-visual-guide h3 {
+  margin: 28px 0 14px;
+  font-size: clamp(21px, 2.2vw, 27px);
+  line-height: 1.4;
+}
+
+.paw-visual-guide .paw-visual-note {
+  margin: 16px 0;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.paw-visual-guide .paw-motion-steps {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+  margin: 20px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.paw-visual-guide .paw-step-card {
+  min-width: 0;
+  margin: 0;
+  padding: 16px;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  background: var(--surface);
+}
+
+.paw-step-number {
+  display: block;
+  margin-bottom: 10px;
+  color: var(--accent);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: .08em;
+}
+
+.paw-gesture-stage {
+  position: relative;
+  display: grid;
+  place-items: center;
+  min-height: 158px;
+  border-radius: 14px;
+  background: var(--surface-blue);
+}
+
+.paw-hand {
+  position: relative;
+  display: block;
+  width: min(100%, 138px);
+  aspect-ratio: 1;
+  overflow: hidden;
+  transform: scaleX(-1);
+}
+
+.paw-hand img {
+  position: absolute;
+  inset: 0 auto auto 0;
+  width: 200%;
+  max-width: none;
+  height: 100%;
+}
+
+.paw-hand-closed img { left: -100%; }
+
+.paw-move-cue {
+  position: absolute;
+  right: 4px;
+  bottom: 2px;
+  color: var(--accent);
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.paw-step-card h4 { margin-top: 14px; font-size: 18px; line-height: 1.5; }
+.paw-visual-guide .paw-step-card p { margin-top: 8px; font-size: 14px; line-height: 1.8; }
+.paw-step-card .text-link { margin-top: 8px; font-size: 14px; }
+
+.paw-screen-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: start;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.paw-screen-card {
+  min-width: 0;
+  margin: 0;
+  padding: 20px;
+  border: 1px solid var(--border);
+  border-radius: 22px;
+  background: var(--surface);
+  scroll-margin-top: 24px;
+}
+
+.paw-screen-card h4 { min-height: 3em; margin-bottom: 16px; font-size: 18px; line-height: 1.5; }
+.paw-screen-link { display: block; width: min(100%, 300px); margin: 0 auto; border-radius: 16px; }
+.paw-screen-link:focus-visible { outline: 3px solid var(--accent); outline-offset: 5px; }
+.paw-screen-link img { display: block; width: 100%; height: auto; border: 1px solid var(--border); border-radius: 16px; }
+.paw-screen-card figcaption { margin-top: 18px; color: var(--muted); font-size: 14px; line-height: 1.8; }
+.paw-screen-card figcaption strong { display: block; margin-bottom: 5px; color: var(--navy); }
+
+@media (max-width: 760px) {
+  .paw-visual-guide .paw-motion-steps { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 580px) {
+  .paw-screen-grid { grid-template-columns: 1fr; }
+  .paw-screen-card h4 { min-height: 0; }
+}
+
+@media (max-width: 430px) {
+  .paw-visual-guide .paw-motion-steps { gap: 10px; }
+  .paw-visual-guide .paw-step-card { padding: 12px; }
+  .paw-gesture-stage { min-height: 128px; }
+  .paw-hand { width: min(100%, 112px); }
+  .paw-screen-card { padding: 14px; }
+}
+
 details {
   border-bottom: 1px solid var(--border);
   background: transparent;
