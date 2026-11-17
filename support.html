@@ -29,7 +29,8 @@
       <header class="page-hero" data-od-id="support-hero">
         <p class="eyebrow">SUPPORT</p>
         <h1 data-od-id="support-heading">困ったときは</h1>
-        <p class="updated">v2.4.0対応 · 最終更新日：2026年10月25日</p>
+        <p class="updated">v2.5.0対応 · 最終更新日：2026年11月17日</p>
+        <p class="rename-note"><strong>v2.5.0で動作認識と姿勢調整を改善しました。</strong>小さな揺れによる準備のやり直しを減らしています。肉球リモコン、音声ガイド、各ゲームの操作は、引き続き下記の案内をご確認ください。</p>
         <p class="lead">困っていることを選んでください。肉球リモコン、3つのゲームの操作、カメラ、記録を順に確認できます。</p>
       </header>
 
@@ -170,6 +171,7 @@
           <h2 id="tracking-title">全身を認識できない</h2>
           <p>頭、膝、足元の映り方と、カメラに入る人数を優先して確認します。</p>
           <div class="support-accordions">
+            <details id="posture-check"><summary>姿勢調整が途中で止まる／やり直しになる</summary><div class="details-body"><p><strong>小さな揺れは、待ってから続きへ。</strong>ドッグドロップ・コグニドロップの姿勢調整では、短い揺れは進み具合を保って待ち、元の姿勢へ戻ると再開します。大きく動いたときや必要な関節が見えないときは、調整をやり直します。無理に体を固めず、正面を向いて楽に立ち、画面の案内を待ちましょう。</p><p>保留中は足を動かさず、膝と足首が見える位置で待ちます。長く止まる場合は、全身の映り方・明るさ・衣服で膝や足元が隠れていないかを確認してください。ドッグトレイルの「スクワット調整」は別の手順です。</p></div></details>
             <details data-od-id="support-detail-body-not-found">
               <summary>認識されない／プレイ中に認識が外れる</summary>
               <div class="details-body">
@@ -193,7 +195,7 @@
 
         <section id="motion-detection" class="support-group" aria-labelledby="motion-title" data-od-id="support-motion-detection">
           <h2 id="motion-title">ドッグドロップ：ステップ・スクワットが反応しない</h2>
-          <p>動作後に中央姿勢へ戻ることと、膝・足元が映っていることが大切です。</p>
+          <p>v2.5.0では、左右ステップとスクワットの認識に端末内の機械学習モデルを使用します。動作後に中央姿勢へ戻ることと、膝・足元が映っていることが大切です。</p>
           <p>設定画面の「動きを試す」で、足を出す・戻す動作とスクワットを確認できます。足を戻しても犬は元のレーンへ戻りません。</p>
           <div class="support-accordions">
             <details id="level-unlock">
@@ -511,6 +513,7 @@
             <summary>最近の更新内容を見る</summary>
             <div class="details-body">
               <ul>
+                <li>2026年11月17日：11月14日公開のv2.5.0に合わせ、ドッグドロップ・コグニドロップの動作認識、姿勢調整の保留と再開、端末内処理の説明を更新しました。</li>
                 <li>2026年10月25日：配信版v2.4.0に合わせ、肉球リモコンの使い方、紹介・任意練習、認識・選択のFAQ、独立したクリック音設定、手指情報の端末内処理を案内しました。</li>
                 <li>2026年10月12日：配信版v2.3.0に合わせ、日本語・英語の音声ガイド、遊び方・練習への入口、短い足戻し確認、ドッグドロップの段階的レベル解放、診断送信の変更を案内しました。コグニドロップで足戻し時に犬が意図せず移動する問題はv2.3.0で修正しています。</li>
                 <li>2026年10月1日：v2.2.0の日本語・English切り替え、プライバシー設定、解析項目の縮小に合わせて案内を更新しました。</li>

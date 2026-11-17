@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="わんムーブv2.4.0の始め方。肉球リモコンでメニューを選ぶ方法、日英の音声ガイド、3つのゲームのステップ・スクワット操作、安全な準備を紹介します。" />
+    <meta name="description" content="わんムーブv2.5.0の始め方。改善した動作認識、短い揺れを保留する姿勢調整、肉球リモコン、3つのゲームの操作と安全な準備を紹介します。" />
     <title>遊び方 | わんムーブ</title>
     <link rel="icon" href="assets/wanmove-icon.png" />
     <link rel="stylesheet" href="assets/site.css?v=20261025-paw-visuals" />
@@ -29,9 +29,9 @@
       <header class="page-hero" data-od-id="guide-hero">
         <p class="eyebrow">FIRST PLAY GUIDE</p>
         <h1 data-od-id="guide-heading">遊び方</h1>
-        <p class="updated">v2.4.0対応 · 最終更新日：2026年10月25日</p>
+        <p class="updated">v2.5.0対応 · 最終更新日：2026年11月17日</p>
         <p class="lead">まずはゲームを選び、安全に準備。画面と日本語・英語の音声ガイドで、次の動きを確認しましょう。</p>
-        <p class="small">画面例には以前のバージョンで撮影したものを含みます。v2.4.0のボタンや案内と異なる場合があります。表示言語はタイトル画面で切り替えられます。</p>
+        <p class="small">画面例には以前のバージョンで撮影したものを含みます。v2.5.0のボタンや案内と異なる場合があります。表示言語はタイトル画面で切り替えられます。</p>
       </header>
 
       <div class="article-wrap">
@@ -46,7 +46,7 @@
           <a class="text-link" href="#play-records">プレイ記録</a>
         </nav>
         <section id="paw-remote" class="detail-group paw-visual-guide" aria-labelledby="paw-remote-title">
-          <p class="eyebrow">PAW REMOTE · NEW IN 2.4.0</p>
+          <p class="eyebrow">PAW REMOTE · MENU CONTROL</p>
           <h2 id="paw-remote-title">肉球で、メニュー選び。</h2>
           <p>肉球リモコンは、端末から離れた場所でも対応するメニューボタンを選べる機能です。左手は青、右手はオレンジ。使いやすい片手で操作し、タッチも引き続き使えます。</p>
           <h3>手の動きは、4ステップ</h3>
@@ -95,6 +95,7 @@
               <p class="scene-label">SCENE 02</p>
               <h2 id="scene-two-title" data-od-id="scene-prepare-heading">端末を置き、姿勢を整える</h2>
               <p>端末を腰くらいの高さの倒れにくい場所へ置き、周囲の安全を確認します。その後、約1.5m離れ、頭から足元までカメラに映る位置へ。体格や端末に合わせて距離を調整します。</p>
+              <p><strong>小さな揺れは、待ってから続きへ。</strong>ドッグドロップ・コグニドロップの姿勢調整では、短い揺れは進み具合を保って待ち、元の姿勢へ戻ると再開します。大きく動いたときや必要な関節が見えないときは、調整をやり直します。無理に体を固めず、正面を向いて楽に立ち、画面の案内を待ちましょう。</p>
               <ul>
                 <li>左右と後方に動ける空間をつくる</li>
                 <li>画面を自分へ向ける</li>
@@ -257,6 +258,7 @@
         <section class="detail-group" aria-labelledby="details-title" data-od-id="guide-details">
           <p class="eyebrow">MORE DETAILS</p>
           <h2 id="details-title">認識と準備の詳細</h2>
+          <details id="motion-recognition"><summary>v2.5.0の動作認識について</summary><div class="details-body"><p>ドッグドロップの左右ステップ・スクワットと、コグニドロップの左右ステップは、アプリに同梱した機械学習モデルで認識します。追加のモデル設定や学習データの提供は不要です。処理は端末内で行い、画像や関節座標を保存・送信しません。</p><p>ドッグトレイルのスクワット調整と、肉球リモコンの操作手順は引き続きそれぞれの案内に従ってください。</p></div></details>
           <details data-od-id="guide-detail-first-launch">
             <summary>初回のカメラ許可と利用状況データ</summary>
             <div class="details-body">
